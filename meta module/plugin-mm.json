@@ -1,0 +1,61 @@
+{
+  "slug": "MADZINE",
+  "name": "MADZINE",
+  "version": "2.0.0",
+  "license": "MIT",
+  "brand": "MADZINE",
+  "author": "MADZINE",
+  "authorEmail": "madzinetw@gmail.com",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "MetaModuleIncludedModules": [
+    "SwingLFO",
+    "EuclideanRhythm",
+    "ADGenerator",
+    "Pinpple",
+    "MADDY",
+    "PPaTTTerning"
+  ],
+  "modules": [
+    {
+      "slug": "SwingLFO",
+      "name": "SwingLFO",
+      "description": "A dual-waveform LFO with swing and shape control",
+      "tags": ["LFO", "Modulator"]
+    },
+    {
+      "slug": "EuclideanRhythm",
+      "name": "EuclideanRhythm",
+      "description": "Three-track Euclidean rhythm generator with chaining",
+      "tags": ["Sequencer", "Clock generator"]
+    },
+    {
+      "slug": "ADGenerator",
+      "name": "ADGenerator",
+      "description": "Three-track Attack-Decay envelope generator with BPF",
+      "tags": ["Envelope generator", "Utility"]
+    },
+    {
+      "slug": "Pinpple",
+      "name": "Pinpple",
+      "description": "Physical modeling resonator with FM and random modulation",
+      "tags": ["Physical modeling", "Filter", "Resonator"]
+    },
+    {
+      "slug": "MADDY",
+      "name": "MADDY",
+      "description": "Advanced Euclidean rhythm sequencer with CV pattern generator and multiple chaining modes",
+      "tags": ["Sequencer", "Clock generator", "CV generator", "Rhythm"]
+    },
+    {
+      "slug": "PPaTTTerning",
+      "name": "PPaTTTerning",
+      "description": "Intelligent CV pattern sequencer with dynamic density control and dual-track delay processing",
+      "tags": ["Sequencer", "CV generator", "Delay", "Pattern generator"]
+    }
+  ]
+}
