@@ -9,8 +9,8 @@
   "authorUrl": "",
   "pluginUrl": "",
   "manualUrl": "",
-  "sourceUrl": "",
-  "donateUrl": "",
+  "sourceUrl": "https://github.com/mmmmmmmadman/MADZINE/tree/main/VCVmodule",
+  "donateUrl": "https://www.patreon.com/c/madzinetw",
   "modules": [
     {
       "slug": "SwingLFO",
