@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 include(../metamodule-plugin-sdk/plugin.cmake)
 
 project(MADZINE 
-    VERSION 2.0.0 
+    VERSION 2.1.0 
     DESCRIPTION "MADZINE Modules for MetaModule" 
     LANGUAGES C CXX ASM
 )
@@ -18,6 +18,9 @@ target_sources(MADZINE PRIVATE
     src/Pinpple.cpp
     src/MADDY.cpp
     src/PPaTTTerning.cpp
+    src/TWNC.cpp
+    src/QQ.cpp
+    src/Observer.cpp
 )
 
 create_plugin(

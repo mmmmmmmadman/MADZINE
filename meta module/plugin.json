@@ -1,16 +1,28 @@
 {
   "slug": "MADZINE",
   "name": "MADZINE",
-  "version": "2.0.0",
-  "license": "MIT",
+  "version": "2.1.0",
+  "license": "GPL-3.0-or-later",
   "brand": "MADZINE",
-  "author": "MADZINE",
+  "author": "MAD",
   "authorEmail": "madzinetw@gmail.com",
   "authorUrl": "",
   "pluginUrl": "",
   "manualUrl": "",
-  "sourceUrl": "",
-  "donateUrl": "",
+  "sourceUrl": "https://github.com/mmmmmmmadman/MADZINE/tree/main/MetaModule",
+  "donateUrl": "https://www.patreon.com/c/madzinetw",
+  "changelogUrl": "",
+  "MetaModuleIncludedModules": [
+    "SwingLFO",
+    "EuclideanRhythm",
+    "ADGenerator",
+    "Pinpple",
+    "MADDY",
+    "PPaTTTerning",
+    "TWNC",
+    "QQ",
+    "Observer"
+  ],
   "modules": [
     {
       "slug": "SwingLFO",
@@ -20,33 +32,51 @@
     },
     {
       "slug": "EuclideanRhythm",
-      "name": "EuclideanRhythm",
-      "description": "Three-track Euclidean rhythm generator with chaining",
-      "tags": ["Sequencer", "Clock generator"]
+      "name": "Euclidean Rhythm",
+      "description": "A three-track Euclidean Rhythm Generator with CV control and Slew",
+      "tags": ["Sequencer", "Clock", "Trigger"]
     },
     {
       "slug": "ADGenerator",
-      "name": "ADGenerator",
-      "description": "Three-track Attack-Decay envelope generator with BPF",
-      "tags": ["Envelope generator", "Utility"]
+      "name": "AD Generator",
+      "description": "Attack Decay envelope generator",
+      "tags": ["Envelope", "Generator"]
     },
     {
       "slug": "Pinpple",
       "name": "Pinpple",
-      "description": "Physical modeling resonator with FM and random modulation",
-      "tags": ["Physical modeling", "Filter", "Resonator"]
+      "description": "A ping filter hihat synthesizer with dynamic FM modulation",
+      "tags": ["Drum", "Filter", "Synthesizer"]
     },
     {
       "slug": "MADDY",
       "name": "MADDY",
-      "description": "Advanced Euclidean rhythm sequencer with CV pattern generator and multiple chaining modes",
-      "tags": ["Sequencer", "Clock generator", "CV generator", "Rhythm"]
+      "description": "Integrated sequencer with swing clock and 3-track Euclidean rhythm generator",
+      "tags": ["Sequencer", "Clock", "Trigger", "LFO"]
     },
     {
       "slug": "PPaTTTerning",
       "name": "PPaTTTerning",
-      "description": "Intelligent CV pattern sequencer with dynamic density control and dual-track delay processing",
-      "tags": ["Sequencer", "CV generator", "Delay", "Pattern generator"]
+      "description": "Pattern-based CV sequencer with style and density control",
+      "tags": ["Sequencer", "CV", "Pattern"]
+    },
+    {
+      "slug": "TWNC",
+      "name": "TWNC",
+      "description": "Dual-track Euclidean rhythm generator for techno sequences",
+      "tags": ["Sequencer", "Clock", "Trigger", "Drum"]
+    },
+    {
+      "slug": "QQ",
+      "name": "QQ",
+      "description": "3-track S-Curve Decay Trigger envelope generator with CV control and waveform scope",
+      "tags": ["Envelope", "Generator", "Visual"]
+    },
+    {
+      "slug": "Observer",
+      "name": "Observer",
+      "description": "8-track color scope module for waveform visualization",
+      "tags": ["Scope", "Visual", "Utility"]
     }
   ]
 }

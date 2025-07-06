@@ -10,4 +10,7 @@ void init(Plugin* p) {
     p->addModel(modelPinpple);
     p->addModel(modelMADDY);
     p->addModel(modelPPaTTTerning);
+    p->addModel(modelTWNC);
+    p->addModel(modelQQ);
+    p->addModel(modelObserver);
 }
