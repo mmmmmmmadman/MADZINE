@@ -1,7 +1,7 @@
 {
   "slug": "MADZINE",
   "name": "MADZINE",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "license": "GPL-3.0-or-later",
   "brand": "MADZINE",
   "author": "MAD",
@@ -47,6 +47,24 @@
       "name": "MADDY",
       "description": "Integrated sequencer with swing clock and 3-track Euclidean rhythm generator",
       "tags": ["Sequencer", "Clock", "Trigger", "LFO"]
+    },
+    {
+      "slug": "TWNC",
+      "name": "TWNC",
+      "description": "Dual-track Euclidean rhythm generator for techno sequences",
+      "tags": ["Sequencer", "Clock", "Trigger", "Drum"]
+    },
+    {
+      "slug": "QQ",
+      "name": "QQ",
+      "description": "3-track S-Curve Decay Trigger envelope generator with CV control and waveform scope",
+      "tags": ["Envelope", "Generator", "Visual"]
+    },
+    {
+      "slug": "Observer",
+      "name": "Observer",
+      "description": "8-track color scope module for waveform visualization",
+      "tags": ["Scope", "Visual", "Utility"]
     }
   ]
 }

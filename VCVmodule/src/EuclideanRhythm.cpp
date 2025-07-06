@@ -211,7 +211,7 @@ struct SnapKnob : ParamWidget {
         
         accumDelta += (e.mouseDelta.x - e.mouseDelta.y);
         
-        float threshold = 30.0f;
+        float threshold = 10.0f;
         
         if (accumDelta >= threshold) {
             float currentValue = pq->getValue();

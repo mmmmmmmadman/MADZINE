@@ -12,4 +12,7 @@ void init(Plugin* p) {
     p->addModel(modelPinpple);
     p->addModel(modelPPaTTTerning);
     p->addModel(modelMADDY);
+    p->addModel(modelTWNC);
+    p->addModel(modelQQ);
+    p->addModel(modelObserver);
 }

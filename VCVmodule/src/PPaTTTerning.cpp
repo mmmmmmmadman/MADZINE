@@ -86,7 +86,7 @@ struct PPaTTTerning : Module {
         paramQuantities[DENSITY_PARAM]->defaultValue = 0.5f;
         paramQuantities[DENSITY_PARAM]->name = "Density";
         
-        configParam(CHAOS_PARAM, 0.0f, 1.0f, 0.0f, "Chaos");
+        configParam(CHAOS_PARAM, 0.0f, 1.0f, 0.0f, "Chaos", "%", 0.f, 100.f);
         configParam(CVD_ATTEN_PARAM, 0.0f, 1.0f, 0.0f, "CVD Time/Attenuation");
         configParam(DELAY_PARAM, 0.0f, 5.0f, 1.0f, "Delay");
         params[DELAY_PARAM].setValue((float)track2Delay);
