@@ -849,7 +849,7 @@ struct MADDY : Module {
             }
             
             
-            return tracks[activeTrackIdx].envelopeOutput * 10.0f;
+            return tracks[activeTrackIdx].processEnvelope(sampleTime, decayParam);
         }
     };
     ChainedSequence chain12, chain23, chain123;
