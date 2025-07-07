@@ -1,144 +1,5 @@
 #include "plugin.hpp"
 
-namespace ripples
-{
-struct SOSCoefficients
-{
-    float b[3];
-    float a[2];
-};
-
-template <typename T, int max_num_sections>
-class SOSFilter
-{
-public:
-    SOSFilter()
-    {
-        Init(0);
-    }
-    SOSFilter(int num_sections)
-    {
-        Init(num_sections);
-    }
-    void Init(int num_sections)
-    {
-        num_sections_ = num_sections;
-        Reset();
-    }
-    void Init(int num_sections, const SOSCoefficients* sections)
-    {
-        num_sections_ = num_sections;
-        Reset();
-        SetCoefficients(sections);
-    }
-    void Reset()
-    {
-        for (int n = 0; n < num_sections_; n++)
-        {
-            x_[n][0] = 0.f;
-            x_[n][1] = 0.f;
-            x_[n][2] = 0.f;
-        }
-        x_[num_sections_][0] = 0.f;
-        x_[num_sections_][1] = 0.f;
-        x_[num_sections_][2] = 0.f;
-    }
-    void SetCoefficients(const SOSCoefficients* sections)
-    {
-        for (int n = 0; n < num_sections_; n++)
-        {
-            sections_[n].b[0] = sections[n].b[0];
-            sections_[n].b[1] = sections[n].b[1];
-            sections_[n].b[2] = sections[n].b[2];
-            sections_[n].a[0] = sections[n].a[0];
-            sections_[n].a[1] = sections[n].a[1];
-        }
-    }
-    T Process(T in)
-    {
-        for (int n = 0; n < num_sections_; n++)
-        {
-            x_[n][2] = x_[n][1];
-            x_[n][1] = x_[n][0];
-            x_[n][0] = in;
-            T out = 0.f;
-            out += sections_[n].b[0] * x_[n][0];
-            out += sections_[n].b[1] * x_[n][1];
-            out += sections_[n].b[2] * x_[n][2];
-            out -= sections_[n].a[0] * x_[n+1][0];
-            out -= sections_[n].a[1] * x_[n+1][1];
-            in = out;
-        }
-        x_[num_sections_][2] = x_[num_sections_][1];
-        x_[num_sections_][1] = x_[num_sections_][0];
-        x_[num_sections_][0] = in;
-        return in;
-    }
-protected:
-    int num_sections_;
-    SOSCoefficients sections_[max_num_sections];
-    T x_[max_num_sections + 1][3];
-};
-
-template <typename T>
-class AAFilter
-{
-public:
-    void Init(float sample_rate)
-    {
-        InitFilter(sample_rate);
-    }
-
-    T ProcessUp(T in)
-    {
-        return up_filter_.Process(in);
-    }
-
-    T ProcessDown(T in)
-    {
-        return down_filter_.Process(in);
-    }
-
-    int GetOversamplingFactor(void)
-    {
-        return oversampling_factor_;
-    }
-
-protected:
-    struct CascadedSOS
-    {
-        float sample_rate;
-        int oversampling_factor;
-        int num_sections;
-        const SOSCoefficients* coeffs;
-    };
-
-    static constexpr int kMaxNumSections = 7;
-
-    SOSFilter<T, kMaxNumSections> up_filter_;
-    SOSFilter<T, kMaxNumSections> down_filter_;
-    int oversampling_factor_;
-
-    void InitFilter(float sample_rate)
-    {
-        const SOSCoefficients kFilter48000x3[6] = 
-        {
-            { {1.96007199e-04,  3.15285921e-04,  1.96007199e-04,  }, {-1.49750952e+00, 5.79487424e-01,  } },
-            { {1.00000000e+00,  1.64502383e-01,  1.00000000e+00,  }, {-1.43900370e+00, 6.63196513e-01,  } },
-            { {1.00000000e+00,  -5.92180251e-01, 1.00000000e+00,  }, {-1.36241892e+00, 7.75058824e-01,  } },
-            { {1.00000000e+00,  -9.07488127e-01, 1.00000000e+00,  }, {-1.30223398e+00, 8.69165582e-01,  } },
-            { {1.00000000e+00,  -1.04177534e+00, 1.00000000e+00,  }, {-1.26951947e+00, 9.34679234e-01,  } },
-            { {1.00000000e+00,  -1.09276235e+00, 1.00000000e+00,  }, {-1.26454687e+00, 9.80322986e-01,  } },
-        };
-        
-        up_filter_.Init(6, kFilter48000x3);
-        down_filter_.Init(6, kFilter48000x3);
-        oversampling_factor_ = 3;
-    }
-};
-
-}
-
 static const float kFreqKnobMin = 20.f;
 static const float kFreqKnobMax = 20000.f;
 
@@ -314,42 +175,32 @@ struct SimpleLPG {
     }
 };
 
-struct OversampledSineVCO {
+struct SimpleSineVCO {
     float phase = 0.0f;
     float sampleRate = 44100.0f;
-    ripples::AAFilter<float> aa_filter_;
     
-    OversampledSineVCO() {
+    SimpleSineVCO() {
         setSampleRate(44100.0f);
     }
     
     void setSampleRate(float sr) {
         sampleRate = sr;
-        aa_filter_.Init(sr);
     }
     
     float process(float freq_hz, float fm_cv) {
-        int oversampling_factor = aa_filter_.GetOversamplingFactor();
-        float output = 0.0f;
+        float modulated_freq = freq_hz * std::pow(2.0f, fm_cv);
+        modulated_freq = clamp(modulated_freq, 1.0f, sampleRate * 0.45f);
         
-        for (int i = 0; i < oversampling_factor; i++) {
-            float modulated_freq = freq_hz * std::pow(2.0f, fm_cv);
-            modulated_freq = clamp(modulated_freq, 1.0f, sampleRate * oversampling_factor * 0.45f);
-            
-            float delta_phase = modulated_freq / (sampleRate * oversampling_factor);
-            
-            phase += delta_phase;
-            if (phase >= 1.0f) {
-                phase -= 1.0f;
-            }
-            
-            float sine_wave = std::sin(2.0f * M_PI * phase);
-            
-            sine_wave = aa_filter_.ProcessUp(sine_wave);
-            output = aa_filter_.ProcessDown(sine_wave);
+        float delta_phase = modulated_freq / sampleRate;
+        
+        phase += delta_phase;
+        if (phase >= 1.0f) {
+            phase -= 1.0f;
         }
         
-        return output * 5.0f;
+        float sine_wave = std::sin(2.0f * M_PI * phase);
+        
+        return sine_wave * 5.0f;
     }
 };
 
@@ -407,8 +258,8 @@ struct TWNC : Module {
     dsp::PulseGenerator track1FlashPulse;
     dsp::PulseGenerator track2FlashPulse;
     
-    OversampledSineVCO sineVCO;
-    OversampledSineVCO sineVCO2;
+    SimpleSineVCO sineVCO;
+    SimpleSineVCO sineVCO2;
     PinkNoiseGenerator<8> pinkNoiseGenerator;
     PinkNoiseGenerator<8> pinkNoiseGenerator2;
     float lastPink = 0.0f;
