@@ -179,10 +179,6 @@ struct SimpleSineVCO {
     float phase = 0.0f;
     float sampleRate = 44100.0f;
     
-    SimpleSineVCO() {
-        setSampleRate(44100.0f);
-    }
-    
     void setSampleRate(float sr) {
         sampleRate = sr;
     }
@@ -573,6 +569,10 @@ struct TWNC : Module {
             
             if (i == 0) {
                 float decayParam = params[TRACK1_DECAY_PARAM].getValue();
+                if (inputs[DRUM_DECAY_CV_INPUT].isConnected()) {
+                    decayParam += inputs[DRUM_DECAY_CV_INPUT].getVoltage() / 10.0f;
+                    decayParam = clamp(decayParam, 0.01f, 2.0f);
+                }
                 float shapeParam = params[TRACK1_SHAPE_PARAM].getValue();
                 
                 float triggerOutput = track.trigPulse.process(args.sampleTime) ? 10.0f : 0.0f;
@@ -595,7 +595,11 @@ struct TWNC : Module {
                 float fmAmount = params[TRACK1_FM_AMT_PARAM].getValue();
                 float processedFM = lpg.process(triggerOutput, 0.001f + decayParam * 0.399f, scaledNoiseInput, fmAmount, args.sampleTime);
                 
-                float freqParam = std::pow(2.0f, params[TRACK1_FREQ_PARAM].getValue());
+                float freqParam = params[TRACK1_FREQ_PARAM].getValue();
+                if (inputs[DRUM_FREQ_CV_INPUT].isConnected()) {
+                    freqParam += inputs[DRUM_FREQ_CV_INPUT].getVoltage();
+                }
+                freqParam = std::pow(2.0f, freqParam);
                 float envelopeFM = envelopeOutput * fmAmount * 4.0f;
                 float totalFM = envelopeFM + processedFM;
                 
@@ -606,7 +610,7 @@ struct TWNC : Module {
                 float vcaDecayParam = params[VCA_DECAY_PARAM].getValue();
                 float mainVCAOutput = mainVCA.process(args.sampleTime, vcaTrigger, vcaDecayParam, 0.5f);
                 
-                float finalAudioOutput = audioOutput * vcaEnvelopeOutput * mainVCAOutput;
+                float finalAudioOutput = audioOutput * vcaEnvelopeOutput * mainVCAOutput * 1.4f;
                 outputs[TRACK1_OUTPUT].setVoltage(finalAudioOutput);
                 
                 outputs[MAIN_VCA_ENV_OUTPUT].setVoltage(mainVCAOutput * 10.0f);
@@ -617,6 +621,10 @@ struct TWNC : Module {
                 }
             } else {
                 float decayParam = params[TRACK2_DECAY_PARAM].getValue();
+                if (inputs[HATS_DECAY_CV_INPUT].isConnected()) {
+                    decayParam += inputs[HATS_DECAY_CV_INPUT].getVoltage() / 10.0f;
+                    decayParam = clamp(decayParam, 0.01f, 2.0f);
+                }
                 float shapeParam = params[TRACK2_SHAPE_PARAM].getValue();
                 
                 float triggerOutput = track.trigPulse.process(args.sampleTime) ? 10.0f : 0.0f;
@@ -637,12 +645,16 @@ struct TWNC : Module {
                     noiseBlend = selectedNoise2 * noiseFMParam * 0.5f;
                 }
                 
-                float freqParam = std::pow(2.0f, params[TRACK2_FREQ_PARAM].getValue());
+                float freqParam = params[TRACK2_FREQ_PARAM].getValue();
+                if (inputs[HATS_FREQ_CV_INPUT].isConnected()) {
+                    freqParam += inputs[HATS_FREQ_CV_INPUT].getVoltage();
+                }
+                freqParam = std::pow(2.0f, freqParam);
                 float audioOutput = sineVCO2.process(freqParam, noiseBlend);
                 
                 float vcaEnvelopeOutput = track.vcaEnvelope.process(args.sampleTime, triggerOutput, decayParam * 0.5f, shapeParam);
                 
-                float finalAudioOutput = audioOutput * vcaEnvelopeOutput;
+                float finalAudioOutput = audioOutput * vcaEnvelopeOutput * 0.7f;
                 outputs[TRACK2_OUTPUT].setVoltage(finalAudioOutput);
                 
                 outputs[TRACK2_VCA_ENV_OUTPUT].setVoltage(vcaEnvelopeOutput * 10.0f);

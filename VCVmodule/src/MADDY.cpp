@@ -802,6 +802,8 @@ struct MADDY : Module {
         int globalClockCount = 0;
         int trackStartClock[3] = {0, 0, 0};
         dsp::PulseGenerator chainTrigPulse;
+	dsp::PulseGenerator clockPulse;
+
         
         void reset() {
             currentTrackIndex = 0;
@@ -810,6 +812,7 @@ struct MADDY : Module {
                 trackStartClock[i] = 0;
             }
             chainTrigPulse.reset();
+	    clockPulse.reset();
         }
         
         int calculateTrackCycleClock(const TrackState& track) {
@@ -817,40 +820,44 @@ struct MADDY : Module {
         }
         
         float processStep(TrackState tracks[], float sampleTime, bool globalClockTriggered, float decayParam, bool& chainTrigger) {
-            chainTrigger = false;
-            if (trackIndices.empty()) return 0.0f;
-            
-            if (globalClockTriggered) {
-                globalClockCount++;
-            }
-            
-            if (currentTrackIndex >= (int)trackIndices.size()) {
-                currentTrackIndex = 0;
-            }
-            
-            int activeTrackIdx = trackIndices[currentTrackIndex];
-            if (activeTrackIdx < 0 || activeTrackIdx >= 3) {
-                return 0.0f;
-            }
-            
-            TrackState& activeTrack = tracks[activeTrackIdx];
-            int trackCycleClock = calculateTrackCycleClock(activeTrack);
-            int elapsedClock = globalClockCount - trackStartClock[activeTrackIdx];
-            
-            if (elapsedClock >= trackCycleClock) {
-                currentTrackIndex++;
-                if (currentTrackIndex >= (int)trackIndices.size()) {
-                    currentTrackIndex = 0;
-                }
-                activeTrackIdx = trackIndices[currentTrackIndex];
-                trackStartClock[activeTrackIdx] = globalClockCount;
-                chainTrigger = true;
-                chainTrigPulse.trigger(0.001f);
-            }
-            
-            
-            return tracks[activeTrackIdx].processEnvelope(sampleTime, decayParam);
-        }
+	    chainTrigger = false;
+	    if (trackIndices.empty()) return 0.0f;
+    
+	    if (globalClockTriggered) {
+	        globalClockCount++;
+	    }
+    
+	    if (currentTrackIndex >= (int)trackIndices.size()) {
+	        currentTrackIndex = 0;
+	    }
+    
+	    int activeTrackIdx = trackIndices[currentTrackIndex];
+	    if (activeTrackIdx < 0 || activeTrackIdx >= 3) {
+	        return 0.0f;
+	    }
+    
+	    TrackState& activeTrack = tracks[activeTrackIdx];
+	    int trackCycleClock = calculateTrackCycleClock(activeTrack);
+	    int elapsedClock = globalClockCount - trackStartClock[activeTrackIdx];
+    
+	    if (elapsedClock >= trackCycleClock) {
+	        currentTrackIndex++;
+	        if (currentTrackIndex >= (int)trackIndices.size()) {
+	            currentTrackIndex = 0;
+	        }
+	        activeTrackIdx = trackIndices[currentTrackIndex];
+	        trackStartClock[activeTrackIdx] = globalClockCount;
+	        chainTrigger = true;
+	        chainTrigPulse.trigger(0.001f);
+	    }
+    
+	    chainTrigger = chainTrigger || chainTrigPulse.process(sampleTime) > 0.0f;
+	if (tracks[activeTrackIdx].trigPulse.process(sampleTime) > 0.0f) {
+	    clockPulse.trigger(0.001f);
+	    }
+
+	    return tracks[activeTrackIdx].processEnvelope(sampleTime, decayParam);
+	}
     };
     ChainedSequence chain12, chain23, chain123;
 
@@ -1185,32 +1192,32 @@ json_t* dataToJson() override {
         }
         
         patternClockTriggered = false;
-        switch (clockSourceValue) {
-            case 0:
-                patternClockTriggered = internalClockTriggered;
-                break;
-            case 1:
-                patternClockTriggered = tracks[0].justTriggered;
-                tracks[0].justTriggered = false;
-                break;
-            case 2:
-                patternClockTriggered = tracks[1].justTriggered;
-                tracks[1].justTriggered = false;
-                break;
-            case 3:
-                patternClockTriggered = tracks[2].justTriggered;
-                tracks[2].justTriggered = false;
-                break;
-            case 4:
-                patternClockTriggered = chain12Trigger;
-                break;
-            case 5:
-                patternClockTriggered = chain23Trigger;
-                break;
-            case 6:
-                patternClockTriggered = chain123Trigger;
-                break;
-        }
+	switch (clockSourceValue) {
+	    case 0:
+	        patternClockTriggered = internalClockTriggered;
+	        break;
+	    case 1:
+	        patternClockTriggered = tracks[0].justTriggered;
+	        tracks[0].justTriggered = false;
+	        break;
+	    case 2:
+	        patternClockTriggered = tracks[1].justTriggered;
+	        tracks[1].justTriggered = false;
+	        break;
+	    case 3:
+	        patternClockTriggered = tracks[2].justTriggered;
+	        tracks[2].justTriggered = false;
+	        break;
+	    case 4:
+	        patternClockTriggered = chain12.clockPulse.process(args.sampleTime) > 0.0f;
+	        break;
+	    case 5:
+	        patternClockTriggered = chain23.clockPulse.process(args.sampleTime) > 0.0f;
+	        break;
+	    case 6:
+	        patternClockTriggered = chain123.clockPulse.process(args.sampleTime) > 0.0f;
+	        break;
+	}
         
         lights[MODE_LIGHT_RED].setBrightness(modeValue == 0 ? 1.0f : 0.0f);
         lights[MODE_LIGHT_GREEN].setBrightness(modeValue == 1 ? 1.0f : 0.0f);
@@ -1569,15 +1576,17 @@ struct MADDYWidget : ModuleWidget {
 	            ShiftQuantity(MADDY* module, int trackIndex) : module(module), trackIndex(trackIndex) {}
         
 	            void setValue(float value) override {
-	                if (module) {
+	                if (module && trackIndex >= 0 && trackIndex < 3) {
 	                    value = clamp(value, 0.0f, 1.0f);
 	                    int shift = (int)std::round(rescale(value, 0.0f, 1.0f, 0.0f, 15.0f)); 
+			    shift = clamp(shift, 0, 15);
 	                    module->tracks[trackIndex].shift = shift;
 	                }
 	            }
         
 	            float getValue() override {
-	                if (module) {
+	                if (module && trackIndex >= 0 && trackIndex < 3) {
+        		    int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
 	                    return rescale((float)module->tracks[trackIndex].shift, 0.0f, 15.0f, 0.0f, 1.0f);
 	                }
 	                return 0.0f;
@@ -1589,8 +1598,9 @@ struct MADDYWidget : ModuleWidget {
 	            std::string getLabel() override { return string::f("Track %d Shift", trackIndex + 1); }
 	            std::string getUnit() override { return " steps"; }
             std::string getDisplayValueString() override {
-	                if (module) {
-	                    return string::f("%d", module->tracks[trackIndex].shift);
+	                if (module && trackIndex >= 0 && trackIndex < 3) {
+       			    int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
+	                    return string::f("%d", shift);
 	                }
 	                return "0";
 	            }
@@ -1628,8 +1638,9 @@ struct MADDYWidget : ModuleWidget {
 	        }
     
 	        void step() override {
-	            if (module) {
-	                text = string::f("%d steps", module->tracks[trackIndex].shift);
+	            if (module && trackIndex >= 0 && trackIndex < 3) {
+        		int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
+        		text = string::f("%d steps", shift);
 	            }
 	            ui::MenuLabel::step();
 	        }
