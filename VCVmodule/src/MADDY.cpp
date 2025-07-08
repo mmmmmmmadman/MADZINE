@@ -1458,91 +1458,71 @@ struct MADDYWidget : ModuleWidget {
         }
     };
 
-    void appendContextMenu(Menu* menu) override {
+   void appendContextMenu(Menu* menu) override {
         MADDY* module = getModule<MADDY>();
         if (!module) return;
 
         menu->addChild(new MenuSeparator);
         menu->addChild(createMenuLabel("Attack Time"));
-    
+
         float currentAttackTime = module->tracks[0].attackTime;
         std::string currentLabel = string::f("Current: %.3fms", currentAttackTime * 1000.0f);
         menu->addChild(createMenuLabel(currentLabel));
 
-        struct AttackTimeChoice {
-            std::string name;
-            float value;
-        };
-
-        std::vector<AttackTimeChoice> choices = {
-            {"0.5ms", 0.0005f},
-            {"1ms", 0.001f},
-            {"2ms", 0.002f},
-            {"3ms", 0.003f},
-            {"4ms", 0.004f},
-            {"5ms", 0.005f},
-            {"6ms (Default)", 0.006f},
-            {"8ms", 0.008f},
-            {"10ms", 0.010f},
-            {"15ms", 0.015f},
-            {"20ms", 0.020f}
-        };
-
-    struct AttackTimeSlider : ui::Slider {
-        struct AttackTimeQuantity : Quantity {
-            MADDY* module;
-            AttackTimeQuantity(MADDY* module) : module(module) {}
-        
-            void setValue(float value) override {
+        struct AttackTimeSlider : ui::Slider {
+            struct AttackTimeQuantity : Quantity {
+                MADDY* module;
+                AttackTimeQuantity(MADDY* module) : module(module) {}
+            
+                void setValue(float value) override {
                     if (module) {
-                            value = clamp(value, 0.0f, 1.0f);
-                            float attackTime = rescale(value, 0.0f, 1.0f, 0.0005f, 0.020f);
-                            for (int i = 0; i < 3; ++i) {
-                                module->tracks[i].attackTime = attackTime;
-                            }
+                        value = clamp(value, 0.0f, 1.0f);
+                        float attackTime = rescale(value, 0.0f, 1.0f, 0.0005f, 0.020f);
+                        for (int i = 0; i < 3; ++i) {
+                            module->tracks[i].attackTime = attackTime;
+                        }
                     }
+                }
+            
+                float getValue() override {
+                    if (module) {
+                        return rescale(module->tracks[0].attackTime, 0.0005f, 0.020f, 0.0f, 1.0f);
+                    }
+                    return 0.3f;
+                }
+            
+                float getMinValue() override { return 0.0f; }
+                float getMaxValue() override { return 1.0f; }            
+                float getDefaultValue() override { return 0.275f; }
+                std::string getLabel() override { return "Attack Time"; }
+                std::string getUnit() override { return " ms"; }
+                std::string getDisplayValueString() override {
+                    if (module) {
+                        return string::f("%.2f", module->tracks[0].attackTime * 1000.0f);
+                    }
+                    return "6.00";
+                }
+            };
+        
+            AttackTimeSlider(MADDY* module) {
+                box.size.x = 200.0f;
+                quantity = new AttackTimeQuantity(module);
             }
         
-            float getValue() override {
-                if (module) {
-                      return rescale(module->tracks[0].attackTime, 0.0005f, 0.020f, 0.0f, 1.0f);
-                }
-                return 0.3f;
-            }
-        
-            float getMinValue() override { return 0.0f; }
-            float getMaxValue() override { return 1.0f; }            
-            float getDefaultValue() override { return 0.275f; }
-            std::string getLabel() override { return "Attack Time"; }
-            std::string getUnit() override { return " ms"; }
-            std::string getDisplayValueString() override {
-                if (module) {
-                    return string::f("%.2f", module->tracks[0].attackTime * 1000.0f);
-                }
-                return "6.00";
+            ~AttackTimeSlider() {
+                delete quantity;
             }
         };
-    
-        AttackTimeSlider(MADDY* module) {
-            box.size.x = 200.0f;
-            quantity = new AttackTimeQuantity(module);
-
-        }
-    
-        ~AttackTimeSlider() {
-            delete quantity;
-        }
-    };
 
         AttackTimeSlider* slider = new AttackTimeSlider(module);
         
         struct AttackTimeDisplay : ui::MenuLabel {
             MADDY* module;
-    
+
             AttackTimeDisplay(MADDY* module) : module(module) {
                 text = "6.00 ms";
             }
-    
+
             void step() override {
                 if (module) {
                     text = string::f("%.2f ms", module->tracks[0].attackTime * 1000.0f);
@@ -1556,102 +1536,58 @@ struct MADDYWidget : ModuleWidget {
         menu->addChild(slider);
         menu->addChild(display);
 
-	// Shift 控制
-	menu->addChild(new MenuSeparator);	
-	menu->addChild(createMenuLabel("Shift Settings"));
+        // Shift 控制 - 修改為固定選單方式
+        menu->addChild(new MenuSeparator);	
+        menu->addChild(createMenuLabel("Shift Settings"));
 
-	for (int trackId = 0; trackId < 3; trackId++) {
-	    std::string trackLabel = string::f("Track %d Shift", trackId + 1);
-	    menu->addChild(createMenuLabel(trackLabel));
-    
-	    int currentShift = module->tracks[trackId].shift;
-	    std::string currentLabel = string::f("Current: %d steps", currentShift);
-	    menu->addChild(createMenuLabel(currentLabel));
-
-	    struct ShiftSlider : ui::Slider {
-	        struct ShiftQuantity : Quantity {
-	            MADDY* module;
-	            int trackIndex;
+        for (int trackId = 0; trackId < 3; trackId++) {
+            std::string trackLabel = string::f("Track %d Shift", trackId + 1);
+            menu->addChild(createMenuLabel(trackLabel));
             
-	            ShiftQuantity(MADDY* module, int trackIndex) : module(module), trackIndex(trackIndex) {}
-        
-	            void setValue(float value) override {
-	                if (module && trackIndex >= 0 && trackIndex < 3) {
-	                    value = clamp(value, 0.0f, 1.0f);
-	                    int shift = (int)std::round(rescale(value, 0.0f, 1.0f, 0.0f, 15.0f)); 
-			    shift = clamp(shift, 0, 15);
-	                    module->tracks[trackIndex].shift = shift;
-	                }
-	            }
-        
-	            float getValue() override {
-	                if (module && trackIndex >= 0 && trackIndex < 3) {
-        		    int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
-	                    return rescale((float)module->tracks[trackIndex].shift, 0.0f, 15.0f, 0.0f, 1.0f);
-	                }
-	                return 0.0f;
-	            }
-        
-	            float getMinValue() override { return 0.0f; }
-	            float getMaxValue() override { return 1.0f; }            
-	            float getDefaultValue() override { return 0.0f; }
-	            std::string getLabel() override { return string::f("Track %d Shift", trackIndex + 1); }
-	            std::string getUnit() override { return " steps"; }
-            std::string getDisplayValueString() override {
-	                if (module && trackIndex >= 0 && trackIndex < 3) {
-       			    int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
-	                    return string::f("%d", shift);
-	                }
-	                return "0";
-	            }
-	        };
-    
-	        ShiftSlider(MADDY* module, int trackIndex) {
-	            box.size.x = 200.0f;
-	            quantity = new ShiftQuantity(module, trackIndex);
-	        }
-    
- 	       ~ShiftSlider() {
-	            delete quantity;
-	        }
-
-		void onDragMove(const event::DragMove& e) override {
-		    if (!quantity) return;
-    
-		    float sensitivity = 0.003f;
-		    float delta = e.mouseDelta.x * sensitivity;
-    
-		    float currentValue = quantity->getValue();
-		    float newValue = clamp(currentValue + delta, 0.0f, 1.0f);
-		    quantity->setValue(newValue);
-		}
-  	    };
-
-	    ShiftSlider* slider = new ShiftSlider(module, trackId);
-    
-	    struct ShiftDisplay : ui::MenuLabel {
-	        MADDY* module;
-	        int trackIndex;
-    
-	        ShiftDisplay(MADDY* module, int trackIndex) : module(module), trackIndex(trackIndex) {
-	            text = "0 steps";
-	        }
-    
-	        void step() override {
-	            if (module && trackIndex >= 0 && trackIndex < 3) {
-        		int shift = clamp(module->tracks[trackIndex].shift, 0, 15);
-        		text = string::f("%d steps", shift);
-	            }
-	            ui::MenuLabel::step();
-	        }
-	    };
-    
-	    ShiftDisplay* display = new ShiftDisplay(module, trackId);
-    
-	    menu->addChild(slider);
-	    menu->addChild(display);
-	}
+            // 為每個軌道建立子選單
+            struct TrackShiftMenu : MenuItem {
+                MADDY* module;
+                int trackIndex;
+                
+                TrackShiftMenu(MADDY* module, int trackIndex) : module(module), trackIndex(trackIndex) {
+                    text = string::f("Track %d Shift", trackIndex + 1);
+                    rightText = string::f("%d step", module ? module->tracks[trackIndex].shift : 0);
+                }
+                
+                Menu* createChildMenu() override {
+                    Menu* menu = new Menu();
+                    
+                    for (int shift = 0; shift <= 4; shift++) {
+                        struct ShiftMenuItem : MenuItem {
+                            MADDY* module;
+                            int trackIndex;
+                            int shiftValue;
+                            
+                            ShiftMenuItem(MADDY* module, int trackIndex, int shiftValue) 
+                                : module(module), trackIndex(trackIndex), shiftValue(shiftValue) {
+                                text = string::f("%d step", shiftValue);
+                                if (module && module->tracks[trackIndex].shift == shiftValue) {
+                                    rightText = CHECKMARK_STRING;
+                                }
+                            }
+                            
+                            void onAction(const event::Action& e) override {
+                                if (module && trackIndex >= 0 && trackIndex < 3) {
+                                    module->tracks[trackIndex].shift = shiftValue;
+                                }
+                            }
+                        };
+                        
+                        menu->addChild(new ShiftMenuItem(module, trackIndex, shift));
+                    }
+                    
+                    return menu;
+                }
+            };
+            
+            menu->addChild(new TrackShiftMenu(module, trackId));
+        }
     }
-};
+}; 
 
 Model* modelMADDY = createModel<MADDY, MADDYWidget>("MADDY");
