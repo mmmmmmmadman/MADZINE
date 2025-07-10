@@ -1,0 +1,36 @@
+plugin-sdk/metamodule-plugin-libc/CMakeFiles/libstdcpp98.dir/libstdc++-v3/src/c++98/tree.cc.obj: \
+ /Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/metamodule-plugin-libc/libstdc++-v3/src/c++98/tree.cc \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_tree.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_algobase.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/c++config.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/os_defines.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/cpu_defines.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/functexcept.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/exception_defines.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/cpp_type_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/ext/type_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/ext/numeric_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_pair.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/type_traits \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/move.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/utility.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_iterator_base_types.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_iterator_base_funcs.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/concept_check.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/debug/assertions.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_iterator.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/ptr_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/debug/debug.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/predefined_ops.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/allocator.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/c++allocator.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/new_allocator.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/new \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/exception.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/memoryfwd.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_function.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/backward/binders.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/ext/alloc_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/alloc_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/stl_construct.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/ext/aligned_buffer.h

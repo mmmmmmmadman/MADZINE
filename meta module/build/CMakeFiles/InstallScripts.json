@@ -1,0 +1,12 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/cmake_install.cmake",
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/plugin-sdk/cmake_install.cmake",
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/plugin-sdk/metamodule-rack-interface/cmake_install.cmake",
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/plugin-sdk/metamodule-core-interface/cmake_install.cmake",
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/plugin-sdk/metamodule-plugin-libc/cmake_install.cmake",
+		"/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/plugin-sdk/cpputil/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,14 +1,14 @@
 {
   "slug": "MADZINE",
   "name": "MADZINE",
-  "version": "2.1.0",
+  "version": "2.1.3",
   "license": "GPL-3.0-or-later",
   "brand": "MADZINE",
   "author": "MAD",
   "authorEmail": "madzinetw@gmail.com",
   "authorUrl": "",
   "pluginUrl": "",
-  "manualUrl": "",
+  "manualUrl": "https://github.com/mmmmmmmadman/MADZINE/tree/main/Manual",
   "sourceUrl": "https://github.com/mmmmmmmadman/MADZINE/tree/main/VCVmodule",
   "donateUrl": "https://www.patreon.com/c/madzinetw",
   "modules": [
@@ -53,6 +53,12 @@
       "name": "TWNC",
       "description": "Dual-track Euclidean rhythm generator for techno sequences",
       "tags": ["Sequencer", "Clock", "Trigger", "Drum"]
+    },
+    {
+      "slug": "TWNCLight",
+      "name": "TWNC Light",
+      "description": "Lightweight dual-track Euclidean rhythm envelope generator",
+      "tags": ["Sequencer", "Clock", "Trigger", "Envelope"]
     },
     {
       "slug": "QQ",

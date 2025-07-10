@@ -1,0 +1,1175 @@
+MADZINE-debug.so:00049520 a _DYNAMIC
+MADZINE-debug.so:000495c0 a _GLOBAL_OFFSET_TABLE_
+MADZINE-debug.so:0000b7e8 t _GLOBAL__sub_I_ADGenerator.cpp
+MADZINE-debug.so:0000b5e4 t _GLOBAL__sub_I_EuclideanRhythm.cpp
+MADZINE-debug.so:0000bb9c t _GLOBAL__sub_I_MADDY.cpp
+MADZINE-debug.so:0000c33c t _GLOBAL__sub_I_Observer.cpp
+MADZINE-debug.so:0000bda0 t _GLOBAL__sub_I_PPaTTTerning.cpp
+MADZINE-debug.so:0000b9d0 t _GLOBAL__sub_I_Pinpple.cpp
+MADZINE-debug.so:0000c170 t _GLOBAL__sub_I_QQ.cpp
+MADZINE-debug.so:0000b434 t _GLOBAL__sub_I_SwingLFO.cpp
+MADZINE-debug.so:0000bfa4 t _GLOBAL__sub_I_TWNC.cpp
+MADZINE-debug.so:0000b2c0 t _GLOBAL__sub_I_plugin.cpp
+MADZINE-debug.so:00012224 t generateEuclideanRhythm(bool*, int, int, int)
+MADZINE-debug.so:00025490 t generateMADDYEuclideanRhythm(bool*, int, int, int)
+MADZINE-debug.so:000328e4 t generateTechnoEuclideanRhythm(bool*, int, int, int)
+MADZINE-debug.so:0003f15c T MetaModule::sdk_version()
+MADZINE-debug.so:00036680 t TWNCWidget::TWNCWidget(TWNC*)
+MADZINE-debug.so:00036680 t TWNCWidget::TWNCWidget(TWNC*)
+MADZINE-debug.so:000319bc t TWNCWidget::~TWNCWidget()
+MADZINE-debug.so:00031988 t TWNCWidget::~TWNCWidget()
+MADZINE-debug.so:00031988 t TWNCWidget::~TWNCWidget()
+MADZINE-debug.so:000417dc T __cxxabiv1::__forced_unwind::~__forced_unwind()
+MADZINE-debug.so:000417d8 T __cxxabiv1::__forced_unwind::~__forced_unwind()
+MADZINE-debug.so:000417d8 T __cxxabiv1::__forced_unwind::~__forced_unwind()
+MADZINE-debug.so:000408a8 T __cxxabiv1::__class_type_info::~__class_type_info()
+MADZINE-debug.so:00040874 T __cxxabiv1::__class_type_info::~__class_type_info()
+MADZINE-debug.so:00040874 T __cxxabiv1::__class_type_info::~__class_type_info()
+MADZINE-debug.so:00041800 T __cxxabiv1::__foreign_exception::~__foreign_exception()
+MADZINE-debug.so:000417fc T __cxxabiv1::__foreign_exception::~__foreign_exception()
+MADZINE-debug.so:000417fc T __cxxabiv1::__foreign_exception::~__foreign_exception()
+MADZINE-debug.so:00040b38 T __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+MADZINE-debug.so:00040b04 T __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+MADZINE-debug.so:00040b04 T __cxxabiv1::__si_class_type_info::~__si_class_type_info()
+MADZINE-debug.so:00016fec t ADGenerator::dataToJson()
+MADZINE-debug.so:00016eb4 t ADGenerator::dataFromJson(json_t*)
+MADZINE-debug.so:00016e20 t ADGenerator::onReset()
+MADZINE-debug.so:00017368 t ADGenerator::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:000184ac t ADGenerator::ADGenerator()
+MADZINE-debug.so:000184ac t ADGenerator::ADGenerator()
+MADZINE-debug.so:00017164 t ADGenerator::~ADGenerator()
+MADZINE-debug.so:00017130 t ADGenerator::~ADGenerator()
+MADZINE-debug.so:00017130 t ADGenerator::~ADGenerator()
+MADZINE-debug.so:000290c8 t MADDYWidget::appendContextMenu(rack::ui::Menu*)
+MADZINE-debug.so:00026a80 t MADDYWidget::MADDYWidget(MADDY*)
+MADZINE-debug.so:00026a80 t MADDYWidget::MADDYWidget(MADDY*)
+MADZINE-debug.so:000215e4 t MADDYWidget::~MADDYWidget()
+MADZINE-debug.so:000215b0 t MADDYWidget::~MADDYWidget()
+MADZINE-debug.so:000215b0 t MADDYWidget::~MADDYWidget()
+MADZINE-debug.so:0002ae64 t PPaTTTerning::dataToJson()
+MADZINE-debug.so:0002adf4 t PPaTTTerning::dataFromJson(json_t*)
+MADZINE-debug.so:0002e768 t PPaTTTerning::generateMapping()
+MADZINE-debug.so:0002adcc t PPaTTTerning::onSampleRateChange()
+MADZINE-debug.so:0002ecb4 t PPaTTTerning::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:0002fe20 t PPaTTTerning::PPaTTTerning()
+MADZINE-debug.so:0002fe20 t PPaTTTerning::PPaTTTerning()
+MADZINE-debug.so:0002af10 t PPaTTTerning::~PPaTTTerning()
+MADZINE-debug.so:0002aedc t PPaTTTerning::~PPaTTTerning()
+MADZINE-debug.so:0002aedc t PPaTTTerning::~PPaTTTerning()
+MADZINE-debug.so:00049b58 b (anonymous namespace)::__new_handler
+MADZINE-debug.so:0000c6a0 t CoreProcessor::get_display_text(int, std::span<char, 4294967295u>)
+MADZINE-debug.so:00020080 t PinppleWidget::PinppleWidget(Pinpple*)
+MADZINE-debug.so:00020080 t PinppleWidget::PinppleWidget(Pinpple*)
+MADZINE-debug.so:0001b950 t PinppleWidget::~PinppleWidget()
+MADZINE-debug.so:0001b91c t PinppleWidget::~PinppleWidget()
+MADZINE-debug.so:0001b91c t PinppleWidget::~PinppleWidget()
+MADZINE-debug.so:0003e128 t ObserverWidget::ObserverWidget(Observer*)
+MADZINE-debug.so:0003e128 t ObserverWidget::ObserverWidget(Observer*)
+MADZINE-debug.so:0003b6d4 t ObserverWidget::~ObserverWidget()
+MADZINE-debug.so:0003b6a0 t ObserverWidget::~ObserverWidget()
+MADZINE-debug.so:0003b6a0 t ObserverWidget::~ObserverWidget()
+MADZINE-debug.so:0003768c t QQScopeDisplay::onDragMove(rack::widget::Widget::DragMoveEvent const&)
+MADZINE-debug.so:00037774 t QQScopeDisplay::drawLayer(rack::widget::Widget::DrawArgs const&, int)
+MADZINE-debug.so:00037be8 t QQScopeDisplay::~QQScopeDisplay()
+MADZINE-debug.so:00037bb4 t QQScopeDisplay::~QQScopeDisplay()
+MADZINE-debug.so:00037bb4 t QQScopeDisplay::~QQScopeDisplay()
+MADZINE-debug.so:0000ff18 t SwingLFOWidget::SwingLFOWidget(SwingLFO*)
+MADZINE-debug.so:0000ff18 t SwingLFOWidget::SwingLFOWidget(SwingLFO*)
+MADZINE-debug.so:0000c840 t SwingLFOWidget::~SwingLFOWidget()
+MADZINE-debug.so:0000c80c t SwingLFOWidget::~SwingLFOWidget()
+MADZINE-debug.so:0000c80c t SwingLFOWidget::~SwingLFOWidget()
+MADZINE-debug.so:00010a98 t EuclideanRhythm::onReset()
+MADZINE-debug.so:00012318 t EuclideanRhythm::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:00012d78 t EuclideanRhythm::EuclideanRhythm()
+MADZINE-debug.so:00012d78 t EuclideanRhythm::EuclideanRhythm()
+MADZINE-debug.so:00010b80 t EuclideanRhythm::~EuclideanRhythm()
+MADZINE-debug.so:00010b4c t EuclideanRhythm::~EuclideanRhythm()
+MADZINE-debug.so:00010b4c t EuclideanRhythm::~EuclideanRhythm()
+MADZINE-debug.so:         U VCVModuleWrapper::mark_input_patched(int)
+MADZINE-debug.so:         U VCVModuleWrapper::mark_output_patched(int)
+MADZINE-debug.so:         U VCVModuleWrapper::mark_input_unpatched(int)
+MADZINE-debug.so:         U VCVModuleWrapper::mark_output_unpatched(int)
+MADZINE-debug.so:         U VCVModuleWrapper::mark_all_inputs_unpatched()
+MADZINE-debug.so:         U VCVModuleWrapper::mark_all_outputs_unpatched()
+MADZINE-debug.so:         U VCVModuleWrapper::update()
+MADZINE-debug.so:         U VCVModuleWrapper::set_input(int, float)
+MADZINE-debug.so:         U VCVModuleWrapper::set_param(int, float)
+MADZINE-debug.so:0001aa28 t ADGeneratorWidget::ADGeneratorWidget(ADGenerator*)
+MADZINE-debug.so:0001aa28 t ADGeneratorWidget::ADGeneratorWidget(ADGenerator*)
+MADZINE-debug.so:00017234 t ADGeneratorWidget::~ADGeneratorWidget()
+MADZINE-debug.so:00017200 t ADGeneratorWidget::~ADGeneratorWidget()
+MADZINE-debug.so:00017200 t ADGeneratorWidget::~ADGeneratorWidget()
+MADZINE-debug.so:000251b8 t ModeParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:00022594 t ModeParamQuantity::getLabel[abi:cxx11]()
+MADZINE-debug.so:000222ac t ModeParamQuantity::~ModeParamQuantity()
+MADZINE-debug.so:000220dc t ModeParamQuantity::~ModeParamQuantity()
+MADZINE-debug.so:000220dc t ModeParamQuantity::~ModeParamQuantity()
+MADZINE-debug.so:0002cfec t PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)
+MADZINE-debug.so:0002f260 t PPaTTTerningWidget::PPaTTTerningWidget(PPaTTTerning*)
+MADZINE-debug.so:0002f260 t PPaTTTerningWidget::PPaTTTerningWidget(PPaTTTerning*)
+MADZINE-debug.so:0002afe4 t PPaTTTerningWidget::~PPaTTTerningWidget()
+MADZINE-debug.so:0002afb0 t PPaTTTerningWidget::~PPaTTTerningWidget()
+MADZINE-debug.so:0002afb0 t PPaTTTerningWidget::~PPaTTTerningWidget()
+MADZINE-debug.so:000211dc t DensityParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:00022390 t DensityParamQuantity::~DensityParamQuantity()
+MADZINE-debug.so:00022004 t DensityParamQuantity::~DensityParamQuantity()
+MADZINE-debug.so:00022004 t DensityParamQuantity::~DensityParamQuantity()
+MADZINE-debug.so:00011594 t DivMultParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:000114b0 t DivMultParamQuantity::~DivMultParamQuantity()
+MADZINE-debug.so:000113d8 t DivMultParamQuantity::~DivMultParamQuantity()
+MADZINE-debug.so:000113d8 t DivMultParamQuantity::~DivMultParamQuantity()
+MADZINE-debug.so:0003b714 t ObserverScopeDisplay::onDragMove(rack::widget::Widget::DragMoveEvent const&)
+MADZINE-debug.so:0003b7fc t ObserverScopeDisplay::drawLayer(rack::widget::Widget::DrawArgs const&, int)
+MADZINE-debug.so:0003bc34 t ObserverScopeDisplay::~ObserverScopeDisplay()
+MADZINE-debug.so:0003bc00 t ObserverScopeDisplay::~ObserverScopeDisplay()
+MADZINE-debug.so:0003bc00 t ObserverScopeDisplay::~ObserverScopeDisplay()
+MADZINE-debug.so:00015ef0 t EuclideanRhythmWidget::EuclideanRhythmWidget(EuclideanRhythm*)
+MADZINE-debug.so:00015ef0 t EuclideanRhythmWidget::EuclideanRhythmWidget(EuclideanRhythm*)
+MADZINE-debug.so:00010c50 t EuclideanRhythmWidget::~EuclideanRhythmWidget()
+MADZINE-debug.so:00010c1c t EuclideanRhythmWidget::~EuclideanRhythmWidget()
+MADZINE-debug.so:00010c1c t EuclideanRhythmWidget::~EuclideanRhythmWidget()
+MADZINE-debug.so:0001c738 t NoiseMixParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:0001bf08 t NoiseMixParamQuantity::getLabel[abi:cxx11]()
+MADZINE-debug.so:0001be24 t NoiseMixParamQuantity::~NoiseMixParamQuantity()
+MADZINE-debug.so:0001bd4c t NoiseMixParamQuantity::~NoiseMixParamQuantity()
+MADZINE-debug.so:0001bd4c t NoiseMixParamQuantity::~NoiseMixParamQuantity()
+MADZINE-debug.so:000318ec t VCAShiftParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:00031d28 t VCAShiftParamQuantity::~VCAShiftParamQuantity()
+MADZINE-debug.so:00031a94 t VCAShiftParamQuantity::~VCAShiftParamQuantity()
+MADZINE-debug.so:00031a94 t VCAShiftParamQuantity::~VCAShiftParamQuantity()
+MADZINE-debug.so:000252fc t ClockSourceParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:00022558 t ClockSourceParamQuantity::getLabel[abi:cxx11]()
+MADZINE-debug.so:00022474 t ClockSourceParamQuantity::~ClockSourceParamQuantity()
+MADZINE-debug.so:00021f2c t ClockSourceParamQuantity::~ClockSourceParamQuantity()
+MADZINE-debug.so:00021f2c t ClockSourceParamQuantity::~ClockSourceParamQuantity()
+MADZINE-debug.so:000327fc t TechnoDivMultParamQuantity::getDisplayValueString[abi:cxx11]()
+MADZINE-debug.so:00031c44 t TechnoDivMultParamQuantity::~TechnoDivMultParamQuantity()
+MADZINE-debug.so:00031b6c t TechnoDivMultParamQuantity::~TechnoDivMultParamQuantity()
+MADZINE-debug.so:00031b6c t TechnoDivMultParamQuantity::~TechnoDivMultParamQuantity()
+MADZINE-debug.so:00037c28 t QQ::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:00038a9c t QQ::QQ()
+MADZINE-debug.so:00038a9c t QQ::QQ()
+MADZINE-debug.so:0003757c t QQ::~QQ()
+MADZINE-debug.so:00037548 t QQ::~QQ()
+MADZINE-debug.so:00037548 t QQ::~QQ()
+MADZINE-debug.so:0003183c t TWNC::onSampleRateChange()
+MADZINE-debug.so:00031748 t TWNC::onReset()
+MADZINE-debug.so:000329d8 t TWNC::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:00034798 t TWNC::TWNC()
+MADZINE-debug.so:00034798 t TWNC::TWNC()
+MADZINE-debug.so:000318ac t TWNC::~TWNC()
+MADZINE-debug.so:00031878 t TWNC::~TWNC()
+MADZINE-debug.so:00031878 t TWNC::~TWNC()
+MADZINE-debug.so:         U rack::contextGet()
+MADZINE-debug.so:0001b464 t rack::plugin::Model* rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0002fa64 t rack::plugin::Model* rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:00016a64 t rack::plugin::Model* rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0003abb0 t rack::plugin::Model* rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:00037150 t rack::plugin::Model* rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0002749c t rack::plugin::Model* rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:00020d50 t rack::plugin::Model* rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0003eda0 t rack::plugin::Model* rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:000106b8 t rack::plugin::Model* rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0000ca84 t rack::componentlibrary::PJ301MPort::~PJ301MPort()
+MADZINE-debug.so:0000ca50 t rack::componentlibrary::PJ301MPort::~PJ301MPort()
+MADZINE-debug.so:0000ca50 t rack::componentlibrary::PJ301MPort::~PJ301MPort()
+MADZINE-debug.so:000111c0 t rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:0001118c t rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:0001118c t rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00011064 t rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00011030 t rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00011030 t rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:0001131c t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:000112e8 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:000112e8 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00010f08 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00010ed4 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:00010ed4 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~SmallLight()
+MADZINE-debug.so:000110d8 t rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TBlueLight()
+MADZINE-debug.so:000110a4 t rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TBlueLight()
+MADZINE-debug.so:000110a4 t rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TBlueLight()
+MADZINE-debug.so:0001731c t rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:000172e8 t rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:000172e8 t rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00021764 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00021730 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00021730 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:000172a8 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00017274 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00017274 t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~MediumLight()
+MADZINE-debug.so:00010f7c t rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TGreenLight()
+MADZINE-debug.so:00010f48 t rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TGreenLight()
+MADZINE-debug.so:00010f48 t rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TGreenLight()
+MADZINE-debug.so:0000c928 t rack::componentlibrary::RoundBlackKnob::~RoundBlackKnob()
+MADZINE-debug.so:0000c8f4 t rack::componentlibrary::RoundBlackKnob::~RoundBlackKnob()
+MADZINE-debug.so:0000c8f4 t rack::componentlibrary::RoundBlackKnob::~RoundBlackKnob()
+MADZINE-debug.so:00011234 t rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedGreenBlueLight()
+MADZINE-debug.so:00011200 t rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedGreenBlueLight()
+MADZINE-debug.so:00011200 t rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedGreenBlueLight()
+MADZINE-debug.so:00010d38 t rack::componentlibrary::RoundSmallBlackKnob::~RoundSmallBlackKnob()
+MADZINE-debug.so:00010d04 t rack::componentlibrary::RoundSmallBlackKnob::~RoundSmallBlackKnob()
+MADZINE-debug.so:00010d04 t rack::componentlibrary::RoundSmallBlackKnob::~RoundSmallBlackKnob()
+MADZINE-debug.so:00010dac t rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>::~TGrayModuleLightWidget()
+MADZINE-debug.so:00010d78 t rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>::~TGrayModuleLightWidget()
+MADZINE-debug.so:00010d78 t rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>::~TGrayModuleLightWidget()
+MADZINE-debug.so:0000c99c t rack::componentlibrary::Trimpot::~Trimpot()
+MADZINE-debug.so:0000c968 t rack::componentlibrary::Trimpot::~Trimpot()
+MADZINE-debug.so:0000c968 t rack::componentlibrary::Trimpot::~Trimpot()
+MADZINE-debug.so:0000c8b4 t rack::componentlibrary::RoundKnob::~RoundKnob()
+MADZINE-debug.so:0000c880 t rack::componentlibrary::RoundKnob::~RoundKnob()
+MADZINE-debug.so:0000c880 t rack::componentlibrary::RoundKnob::~RoundKnob()
+MADZINE-debug.so:00010e20 t rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedLight()
+MADZINE-debug.so:00010dec t rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedLight()
+MADZINE-debug.so:00010dec t rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >::~TRedLight()
+MADZINE-debug.so:0001114c t rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00011118 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00011118 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010ff0 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010fbc t rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010fbc t rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:000112a8 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00011274 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00011274 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010e94 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010e60 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010e60 t rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >::~TSvgLight()
+MADZINE-debug.so:00010cc4 t rack::componentlibrary::VCVButton::~VCVButton()
+MADZINE-debug.so:00010c90 t rack::componentlibrary::VCVButton::~VCVButton()
+MADZINE-debug.so:00010c90 t rack::componentlibrary::VCVButton::~VCVButton()
+MADZINE-debug.so:00049ad8 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049b48 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049aa4 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049b34 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049b0c b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049a6c b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049a90 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049b20 b rack::componentlibrary::SCHEME_RED
+MADZINE-debug.so:00049a80 b rack::componentlibrary::SCHEME_BLUE
+MADZINE-debug.so:00049a4c b rack::componentlibrary::SCHEME_BLUE
+MADZINE-debug.so:00049ab8 b rack::componentlibrary::SCHEME_BLUE
+MADZINE-debug.so:00049aec b rack::componentlibrary::SCHEME_BLUE
+MADZINE-debug.so:00049a5c b rack::componentlibrary::SCHEME_GREEN
+MADZINE-debug.so:00049ac8 b rack::componentlibrary::SCHEME_GREEN
+MADZINE-debug.so:00049afc b rack::componentlibrary::SCHEME_GREEN
+MADZINE-debug.so:0001b39c t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<ADGenerator, ADGeneratorWidget>()
+MADZINE-debug.so:0003167c t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<PPaTTTerning, PPaTTTerningWidget>()
+MADZINE-debug.so:0001699c t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<EuclideanRhythm, EuclideanRhythmWidget>()
+MADZINE-debug.so:0003aae8 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<QQ, QQWidget>()
+MADZINE-debug.so:00037088 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<TWNC, TWNCWidget>()
+MADZINE-debug.so:00029000 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<MADDY, MADDYWidget>()
+MADZINE-debug.so:00020c88 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<Pinpple, PinppleWidget>()
+MADZINE-debug.so:0003ecd8 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<Observer, ObserverWidget>()
+MADZINE-debug.so:000105f0 t std::unique_ptr<CoreProcessor, std::default_delete<CoreProcessor> > rack::create_vcv_module<SwingLFO, SwingLFOWidget>()
+MADZINE-debug.so:00024ca0 t rack::ui::MenuItem* rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool) [clone .isra.0]
+MADZINE-debug.so:0002cad4 t rack::ui::MenuItem* rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool) [clone .isra.0]
+MADZINE-debug.so:0000fac0 t rack::componentlibrary::PJ301MPort* rack::createInputCentered<rack::componentlibrary::PJ301MPort>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:000158b0 t rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:000155b4 t rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:00015bac t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:000152b8 t rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0002673c t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0001a72c t rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >* rack::createLightCentered<rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > > >(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0000f7e4 t rack::componentlibrary::RoundBlackKnob* rack::createParamCentered<rack::componentlibrary::RoundBlackKnob>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:00014e50 t rack::componentlibrary::RoundSmallBlackKnob* rack::createParamCentered<rack::componentlibrary::RoundSmallBlackKnob>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0000fc4c t rack::componentlibrary::Trimpot* rack::createParamCentered<rack::componentlibrary::Trimpot>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0001a4a0 t rack::componentlibrary::VCVButton* rack::createParamCentered<rack::componentlibrary::VCVButton>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:0001512c t rack::componentlibrary::PJ301MPort* rack::createOutputCentered<rack::componentlibrary::PJ301MPort>(rack::math::Vec, rack::engine::Module*, int)
+MADZINE-debug.so:         U rack::ui::MenuSeparator::MenuSeparator()
+MADZINE-debug.so:         U rack::ui::Menu::Menu()
+MADZINE-debug.so:         U rack::ui::MenuItem::onDragDrop(rack::widget::Widget::DragDropEvent const&)
+MADZINE-debug.so:00021110 t rack::ui::MenuItem::createChildMenu()
+MADZINE-debug.so:         U rack::ui::MenuItem::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::ui::MenuItem::step()
+MADZINE-debug.so:         U rack::ui::MenuItem::onEnter(rack::widget::Widget::EnterEvent const&)
+MADZINE-debug.so:         U rack::ui::MenuItem::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:         U rack::ui::MenuEntry::MenuEntry()
+MADZINE-debug.so:         U rack::app::LedDisplay::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onDragDrop(rack::widget::Widget::DragDropEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onDragEnter(rack::widget::Widget::DragEnterEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onDragLeave(rack::widget::Widget::DragLeaveEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onDragStart(rack::widget::Widget::DragStartEvent const&)
+MADZINE-debug.so:0000c708 t rack::app::PortWidget::appendContextMenu(rack::ui::Menu*)
+MADZINE-debug.so:         U rack::app::PortWidget::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::PortWidget::step()
+MADZINE-debug.so:         U rack::app::PortWidget::onEnter(rack::widget::Widget::EnterEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onLeave(rack::widget::Widget::LeaveEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::onDragEnd(rack::widget::Widget::DragEndEvent const&)
+MADZINE-debug.so:         U rack::app::PortWidget::~PortWidget()
+MADZINE-debug.so:         U rack::app::RackWidget::getTopCable(rack::app::PortWidget*)
+MADZINE-debug.so:         U rack::app::LightWidget::drawBackground(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::LightWidget::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::LightWidget::drawHalo(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::LightWidget::drawLayer(rack::widget::Widget::DrawArgs const&, int)
+MADZINE-debug.so:         U rack::app::LightWidget::drawLight(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::ParamWidget::onDoubleClick(rack::widget::Widget::DoubleClickEvent const&)
+MADZINE-debug.so:         U rack::app::ParamWidget::getParamQuantity()
+MADZINE-debug.so:0000c698 t rack::app::ParamWidget::appendContextMenu(rack::ui::Menu*)
+MADZINE-debug.so:         U rack::app::ParamWidget::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::ParamWidget::step()
+MADZINE-debug.so:         U rack::app::ParamWidget::onEnter(rack::widget::Widget::EnterEvent const&)
+MADZINE-debug.so:         U rack::app::ParamWidget::onLeave(rack::widget::Widget::LeaveEvent const&)
+MADZINE-debug.so:         U rack::app::ParamWidget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onDragMove(rack::widget::Widget::DragMoveEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onHoverKey(rack::widget::Widget::HoverKeyEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addSvgLight(std::basic_string_view<char, std::char_traits<char> >, rack::app::ModuleLightWidget*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onDragHover(rack::widget::Widget::DragHoverEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onDragStart(rack::widget::Widget::DragStartEvent const&)
+MADZINE-debug.so:0000c70c t rack::app::ModuleWidget::appendContextMenu(rack::ui::Menu*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onHover(rack::widget::Widget::HoverEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addChild(rack::widget::Widget*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addInput(rack::app::SvgPort*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addParam(rack::app::SvgKnob*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addParam(rack::app::SvgSwitch*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::getInput(int)
+MADZINE-debug.so:         U rack::app::ModuleWidget::getParam(int)
+MADZINE-debug.so:         U rack::app::ModuleWidget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::setModel(rack::plugin::Model*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::setPanel(rack::app::SvgPanel*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::addOutput(rack::app::SvgPort*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::drawLayer(rack::widget::Widget::DrawArgs const&, int)
+MADZINE-debug.so:         U rack::app::ModuleWidget::getModule()
+MADZINE-debug.so:         U rack::app::ModuleWidget::onDragEnd(rack::widget::Widget::DragEndEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleWidget::setModule(rack::engine::Module*)
+MADZINE-debug.so:         U rack::app::ModuleWidget::ModuleWidget()
+MADZINE-debug.so:         U rack::app::ModuleWidget::~ModuleWidget()
+MADZINE-debug.so:         U rack::app::MultiLightWidget::addBaseColor(NVGcolor)
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::step()
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::onEnter(rack::widget::Widget::EnterEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::onHover(rack::widget::Widget::HoverEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::onLeave(rack::widget::Widget::LeaveEvent const&)
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::ModuleLightWidget()
+MADZINE-debug.so:         U rack::app::ModuleLightWidget::~ModuleLightWidget()
+MADZINE-debug.so:         U rack::app::Knob::onDragMove(rack::widget::Widget::DragMoveEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onDragLeave(rack::widget::Widget::DragLeaveEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onDragStart(rack::widget::Widget::DragStartEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onHoverScroll(rack::widget::Widget::HoverScrollEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::initParamQuantity()
+MADZINE-debug.so:         U rack::app::Knob::onHover(rack::widget::Widget::HoverEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onLeave(rack::widget::Widget::LeaveEvent const&)
+MADZINE-debug.so:0000c69c t rack::app::Knob::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::onDragEnd(rack::widget::Widget::DragEndEvent const&)
+MADZINE-debug.so:         U rack::app::Knob::~Knob()
+MADZINE-debug.so:         U rack::app::Switch::onDoubleClick(rack::widget::Widget::DoubleClickEvent const&)
+MADZINE-debug.so:         U rack::app::Switch::initParamQuantity()
+MADZINE-debug.so:         U rack::app::Switch::step()
+MADZINE-debug.so:         U rack::app::SvgKnob::setSvg(std::shared_ptr<rack::window::Svg>)
+MADZINE-debug.so:         U rack::app::SvgKnob::onChange(rack::widget::Widget::ChangeEvent const&)
+MADZINE-debug.so:         U rack::app::SvgKnob::SvgKnob()
+MADZINE-debug.so:         U rack::app::SvgPort::setSvg(std::shared_ptr<rack::window::Svg>)
+MADZINE-debug.so:         U rack::app::SvgPort::SvgPort()
+MADZINE-debug.so:0000ca10 t rack::app::SvgPort::~SvgPort()
+MADZINE-debug.so:0000c9dc t rack::app::SvgPort::~SvgPort()
+MADZINE-debug.so:0000c9dc t rack::app::SvgPort::~SvgPort()
+MADZINE-debug.so:         U rack::app::SvgPanel::setBackground(std::shared_ptr<rack::window::Svg>)
+MADZINE-debug.so:         U rack::app::SvgPanel::SvgPanel()
+MADZINE-debug.so:         U rack::app::SvgSwitch::onDragStart(rack::widget::Widget::DragStartEvent const&)
+MADZINE-debug.so:         U rack::app::SvgSwitch::addFrame(std::shared_ptr<rack::window::Svg>)
+MADZINE-debug.so:         U rack::app::SvgSwitch::onChange(rack::widget::Widget::ChangeEvent const&)
+MADZINE-debug.so:         U rack::app::SvgSwitch::onDragEnd(rack::widget::Widget::DragEndEvent const&)
+MADZINE-debug.so:         U rack::app::SvgSwitch::SvgSwitch()
+MADZINE-debug.so:         U rack::app::SvgSwitch::~SvgSwitch()
+MADZINE-debug.so:         U rack::asset::plugin(rack::plugin::Plugin*, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+MADZINE-debug.so:         U rack::asset::system(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getMaxValue()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getMinValue()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getDescription[abi:cxx11]()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getDefaultValue()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getDisplayValue()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::setDisplayValue(float)
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getDisplayPrecision()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::setDisplayValueString(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+MADZINE-debug.so:         U rack::engine::ParamQuantity::reset()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::toJson()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getUnit[abi:cxx11]()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::fromJson(json_t*)
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getLabel[abi:cxx11]()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::getValue()
+MADZINE-debug.so:         U rack::engine::ParamQuantity::setValue(float)
+MADZINE-debug.so:         U rack::engine::ParamQuantity::randomize()
+MADZINE-debug.so:         U rack::engine::Engine::getSampleRate()
+MADZINE-debug.so:0000c6cc t rack::engine::Module::dataToJson()
+MADZINE-debug.so:         U rack::engine::Module::load_state(std::basic_string_view<char, std::char_traits<char> >)
+MADZINE-debug.so:0000c6dc t rack::engine::Module::onUnBypass(rack::engine::Module::UnBypassEvent const&)
+MADZINE-debug.so:         U rack::engine::Module::save_state[abi:cxx11]()
+MADZINE-debug.so:00038570 t rack::engine::PortInfo* rack::engine::Module::configInput<rack::engine::PortInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:000322f0 t rack::engine::PortInfo* rack::engine::Module::configInput<rack::engine::PortInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:00011b18 t rack::engine::PortInfo* rack::engine::Module::configInput<rack::engine::PortInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:0002c4a0 t rack::engine::LightInfo* rack::engine::Module::configLight<rack::engine::LightInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:000238a8 t rack::engine::LightInfo* rack::engine::Module::configLight<rack::engine::LightInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:0002c684 t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:0001819c t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:0003876c t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:00023c8c t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:000324ec t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:00011f14 t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:0001c428 t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:0000d900 t rack::engine::ParamQuantity* rack::engine::Module::configParam<rack::engine::ParamQuantity>(int, float, float, float, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, float, float, float) [clone .isra.0]
+MADZINE-debug.so:         U rack::engine::Module::onRandomize(rack::engine::Module::RandomizeEvent const&)
+MADZINE-debug.so:0000c700 t rack::engine::Module::onRandomize()
+MADZINE-debug.so:0000c6ec t rack::engine::Module::onSetMaster(rack::engine::Module::SetMasterEvent const&)
+MADZINE-debug.so:00023a8c t rack::engine::PortInfo* rack::engine::Module::configOutput<rack::engine::PortInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:00011d14 t rack::engine::PortInfo* rack::engine::Module::configOutput<rack::engine::PortInfo>(int, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >) [clone .isra.0]
+MADZINE-debug.so:0000c6d4 t rack::engine::Module::dataFromJson(json_t*)
+MADZINE-debug.so:0000c6e0 t rack::engine::Module::onPortChange(rack::engine::Module::PortChangeEvent const&)
+MADZINE-debug.so:         U rack::engine::Module::paramsToJson()
+MADZINE-debug.so:0000c6f0 t rack::engine::Module::onUnsetMaster(rack::engine::Module::UnsetMasterEvent const&)
+MADZINE-debug.so:         U rack::engine::Module::processBypass(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:         U rack::engine::Module::paramsFromJson(json_t*)
+MADZINE-debug.so:         U rack::engine::Module::set_samplerate(float)
+MADZINE-debug.so:0000c6e4 t rack::engine::Module::onExpanderChange(rack::engine::Module::ExpanderChangeEvent const&)
+MADZINE-debug.so:0000cb24 t rack::engine::Module::onSampleRateChange(rack::engine::Module::SampleRateChangeEvent const&)
+MADZINE-debug.so:0000c704 t rack::engine::Module::onSampleRateChange()
+MADZINE-debug.so:         U rack::engine::Module::draw_graphic_display(int)
+MADZINE-debug.so:         U rack::engine::Module::hide_graphic_display(int)
+MADZINE-debug.so:         U rack::engine::Module::show_graphic_display(int, std::span<unsigned long, 4294967295u>, unsigned int, _lv_obj_t*)
+MADZINE-debug.so:0000c6c8 t rack::engine::Module::step()
+MADZINE-debug.so:0000cacc t rack::engine::Module::onAdd(rack::engine::Module::AddEvent const&)
+MADZINE-debug.so:0000c6f4 t rack::engine::Module::onAdd()
+MADZINE-debug.so:         U rack::engine::Module::config(int, int, int, int)
+MADZINE-debug.so:0000c6e8 t rack::engine::Module::onSave(rack::engine::Module::SaveEvent const&)
+MADZINE-debug.so:         U rack::engine::Module::toJson()
+MADZINE-debug.so:         U rack::engine::Module::update(VCVModuleWrapper::ProcessArgs const&, bool)
+MADZINE-debug.so:         U rack::engine::Module::onReset(rack::engine::Module::ResetEvent const&)
+MADZINE-debug.so:0000c6fc t rack::engine::Module::onReset()
+MADZINE-debug.so:         U rack::engine::Module::fromJson(json_t*)
+MADZINE-debug.so:0000c6d8 t rack::engine::Module::onBypass(rack::engine::Module::BypassEvent const&)
+MADZINE-debug.so:0000caf8 t rack::engine::Module::onRemove(rack::engine::Module::RemoveEvent const&)
+MADZINE-debug.so:0000c6f8 t rack::engine::Module::onRemove()
+MADZINE-debug.so:         U rack::engine::Module::Module()
+MADZINE-debug.so:         U rack::engine::Module::~Module()
+MADZINE-debug.so:0000cec4 t rack::engine::PortInfo::~PortInfo()
+MADZINE-debug.so:0000f77c t rack::engine::PortInfo::~PortInfo()
+MADZINE-debug.so:0000f77c t rack::engine::PortInfo::~PortInfo()
+MADZINE-debug.so:00011364 t rack::engine::LightInfo::~LightInfo()
+MADZINE-debug.so:00014de8 t rack::engine::LightInfo::~LightInfo()
+MADZINE-debug.so:00014de8 t rack::engine::LightInfo::~LightInfo()
+MADZINE-debug.so:0000c6b8 t rack::plugin::Model::createModule()
+MADZINE-debug.so:0000c6c0 t rack::plugin::Model::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0000d410 t rack::plugin::Model::~Model()
+MADZINE-debug.so:0000cf38 t rack::plugin::Model::~Model()
+MADZINE-debug.so:0000cf38 t rack::plugin::Model::~Model()
+MADZINE-debug.so:         U rack::plugin::Plugin::addModel(rack::plugin::Model*)
+MADZINE-debug.so:         U rack::random::local()
+MADZINE-debug.so:         U rack::string::f[abi:cxx11](char const*, ...)
+MADZINE-debug.so:0000c684 t rack::widget::OpaqueWidget::onHoverKey(rack::widget::Widget::HoverKeyEvent const&)
+MADZINE-debug.so:0000c694 t rack::widget::OpaqueWidget::onPathDrop(rack::widget::Widget::PathDropEvent const&)
+MADZINE-debug.so:0000c690 t rack::widget::OpaqueWidget::onDragHover(rack::widget::Widget::DragHoverEvent const&)
+MADZINE-debug.so:0000c688 t rack::widget::OpaqueWidget::onHoverText(rack::widget::Widget::HoverTextEvent const&)
+MADZINE-debug.so:0000c68c t rack::widget::OpaqueWidget::onHoverScroll(rack::widget::Widget::HoverScrollEvent const&)
+MADZINE-debug.so:0000c680 t rack::widget::OpaqueWidget::onHover(rack::widget::Widget::HoverEvent const&)
+MADZINE-debug.so:0002110c t rack::widget::OpaqueWidget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:000216f0 t rack::widget::OpaqueWidget::~OpaqueWidget()
+MADZINE-debug.so:000216bc t rack::widget::OpaqueWidget::~OpaqueWidget()
+MADZINE-debug.so:000216bc t rack::widget::OpaqueWidget::~OpaqueWidget()
+MADZINE-debug.so:         U rack::widget::FramebufferWidget::FramebufferWidget()
+MADZINE-debug.so:00010a80 t rack::widget::TransparentWidget::onHoverKey(rack::widget::Widget::HoverKeyEvent const&)
+MADZINE-debug.so:00010a90 t rack::widget::TransparentWidget::onPathDrop(rack::widget::Widget::PathDropEvent const&)
+MADZINE-debug.so:00010a8c t rack::widget::TransparentWidget::onDragHover(rack::widget::Widget::DragHoverEvent const&)
+MADZINE-debug.so:00010a84 t rack::widget::TransparentWidget::onHoverText(rack::widget::Widget::HoverTextEvent const&)
+MADZINE-debug.so:00010a88 t rack::widget::TransparentWidget::onHoverScroll(rack::widget::Widget::HoverScrollEvent const&)
+MADZINE-debug.so:00010a7c t rack::widget::TransparentWidget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:0000c634 t rack::widget::Widget::onDeselect(rack::widget::Widget::DeselectEvent const&)
+MADZINE-debug.so:0000c64c t rack::widget::Widget::onDragDrop(rack::widget::Widget::DragDropEvent const&)
+MADZINE-debug.so:0000c640 t rack::widget::Widget::onDragMove(rack::widget::Widget::DragMoveEvent const&)
+MADZINE-debug.so:00037514 t rack::widget::Widget::onHoverKey(rack::widget::Widget::HoverKeyEvent const&)
+MADZINE-debug.so:0000c650 t rack::widget::Widget::onPathDrop(rack::widget::Widget::PathDropEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::getViewport(rack::math::Rect)
+MADZINE-debug.so:0000c644 t rack::widget::Widget::onDragEnter(rack::widget::Widget::DragEnterEvent const&)
+MADZINE-debug.so:00037518 t rack::widget::Widget::onDragHover(rack::widget::Widget::DragHoverEvent const&)
+MADZINE-debug.so:0000c648 t rack::widget::Widget::onDragLeave(rack::widget::Widget::DragLeaveEvent const&)
+MADZINE-debug.so:00010a74 t rack::widget::Widget::onDragStart(rack::widget::Widget::DragStartEvent const&)
+MADZINE-debug.so:0000c620 t rack::widget::Widget::onHoverText(rack::widget::Widget::HoverTextEvent const&)
+MADZINE-debug.so:0000c638 t rack::widget::Widget::onSelectKey(rack::widget::Widget::SelectKeyEvent const&)
+MADZINE-debug.so:0000c660 t rack::widget::Widget::onReposition(rack::widget::Widget::RepositionEvent const&)
+MADZINE-debug.so:0000c63c t rack::widget::Widget::onSelectText(rack::widget::Widget::SelectTextEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::addChildBelow(rack::widget::Widget*, rack::widget::Widget*)
+MADZINE-debug.so:0000c61c t rack::widget::Widget::onDoubleClick(rack::widget::Widget::DoubleClickEvent const&)
+MADZINE-debug.so:0000c624 t rack::widget::Widget::onHoverScroll(rack::widget::Widget::HoverScrollEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::getRelativeZoom(rack::widget::Widget*)
+MADZINE-debug.so:0000c678 t rack::widget::Widget::onContextCreate(rack::widget::Widget::ContextCreateEvent const&)
+MADZINE-debug.so:0000c67c t rack::widget::Widget::onContextDestroy(rack::widget::Widget::ContextDestroyEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::getRelativeOffset(rack::math::Vec, rack::widget::Widget*)
+MADZINE-debug.so:         U rack::widget::Widget::getChildrenBoundingBox()
+MADZINE-debug.so:         U rack::widget::Widget::getVisibleChildrenBoundingBox()
+MADZINE-debug.so:         U rack::widget::Widget::draw(rack::widget::Widget::DrawArgs const&)
+MADZINE-debug.so:         U rack::widget::Widget::step()
+MADZINE-debug.so:0000c668 t rack::widget::Widget::onAdd(rack::widget::Widget::AddEvent const&)
+MADZINE-debug.so:0000c674 t rack::widget::Widget::onHide(rack::widget::Widget::HideEvent const&)
+MADZINE-debug.so:0000c670 t rack::widget::Widget::onShow(rack::widget::Widget::ShowEvent const&)
+MADZINE-debug.so:0000c65c t rack::widget::Widget::onDirty(rack::widget::Widget::DirtyEvent const&)
+MADZINE-debug.so:0000c628 t rack::widget::Widget::onEnter(rack::widget::Widget::EnterEvent const&)
+MADZINE-debug.so:0003750c t rack::widget::Widget::onHover(rack::widget::Widget::HoverEvent const&)
+MADZINE-debug.so:0000c62c t rack::widget::Widget::onLeave(rack::widget::Widget::LeaveEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::addChild(rack::widget::Widget*)
+MADZINE-debug.so:0000c654 t rack::widget::Widget::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:00037510 t rack::widget::Widget::onButton(rack::widget::Widget::ButtonEvent const&)
+MADZINE-debug.so:0000c658 t rack::widget::Widget::onChange(rack::widget::Widget::ChangeEvent const&)
+MADZINE-debug.so:0000c66c t rack::widget::Widget::onRemove(rack::widget::Widget::RemoveEvent const&)
+MADZINE-debug.so:0000c664 t rack::widget::Widget::onResize(rack::widget::Widget::ResizeEvent const&)
+MADZINE-debug.so:0000c630 t rack::widget::Widget::onSelect(rack::widget::Widget::SelectEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::drawLayer(rack::widget::Widget::DrawArgs const&, int)
+MADZINE-debug.so:00010a78 t rack::widget::Widget::onDragEnd(rack::widget::Widget::DragEndEvent const&)
+MADZINE-debug.so:         U rack::widget::Widget::~Widget()
+MADZINE-debug.so:         U rack::widget::SvgWidget::setSvg(std::shared_ptr<rack::window::Svg>)
+MADZINE-debug.so:         U rack::widget::SvgWidget::SvgWidget()
+MADZINE-debug.so:         U rack::window::Svg::load(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+MADZINE-debug.so:         U rack::window::Svg::filename()
+MADZINE-debug.so:         U rack::Quantity::getString[abi:cxx11]()
+MADZINE-debug.so:000213d4 t MADDY::dataToJson()
+MADZINE-debug.so:000212dc t MADDY::dataFromJson(json_t*)
+MADZINE-debug.so:00025580 t MADDY::generateMapping()
+MADZINE-debug.so:000242d8 t MADDY::onReset()
+MADZINE-debug.so:000259e0 t MADDY::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:00027940 t MADDY::MADDY()
+MADZINE-debug.so:00027940 t MADDY::MADDY()
+MADZINE-debug.so:00021514 t MADDY::~MADDY()
+MADZINE-debug.so:000214e0 t MADDY::~MADDY()
+MADZINE-debug.so:000214e0 t MADDY::~MADDY()
+MADZINE-debug.so:0001c7e8 t Pinpple::RipplesBPFEngine::process(float, float, float, float)
+MADZINE-debug.so:0001b998 t Pinpple::onSampleRateChange()
+MADZINE-debug.so:0001d6a8 t Pinpple::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:0001e358 t Pinpple::Pinpple()
+MADZINE-debug.so:0001e358 t Pinpple::Pinpple()
+MADZINE-debug.so:0001b880 t Pinpple::~Pinpple()
+MADZINE-debug.so:0001b84c t Pinpple::~Pinpple()
+MADZINE-debug.so:0001b84c t Pinpple::~Pinpple()
+MADZINE-debug.so:0003af80 t Observer::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:0003c160 t Observer::Observer()
+MADZINE-debug.so:0003c160 t Observer::Observer()
+MADZINE-debug.so:0003b604 t Observer::~Observer()
+MADZINE-debug.so:0003b5d0 t Observer::~Observer()
+MADZINE-debug.so:0003b5d0 t Observer::~Observer()
+MADZINE-debug.so:0003a430 t QQWidget::QQWidget(QQ*)
+MADZINE-debug.so:0003a430 t QQWidget::QQWidget(QQ*)
+MADZINE-debug.so:0003764c t QQWidget::~QQWidget()
+MADZINE-debug.so:00037618 t QQWidget::~QQWidget()
+MADZINE-debug.so:00037618 t QQWidget::~QQWidget()
+MADZINE-debug.so:0000cb50 t SwingLFO::process(VCVModuleWrapper::ProcessArgs const&)
+MADZINE-debug.so:0000dc10 t SwingLFO::SwingLFO()
+MADZINE-debug.so:0000dc10 t SwingLFO::SwingLFO()
+MADZINE-debug.so:0000c770 t SwingLFO::~SwingLFO()
+MADZINE-debug.so:0000c73c t SwingLFO::~SwingLFO()
+MADZINE-debug.so:0000c73c t SwingLFO::~SwingLFO()
+MADZINE-debug.so:0004095c T __cxxabiv1::__class_type_info::__do_catch(std::type_info const*, void**, unsigned int) const
+MADZINE-debug.so:00040930 T __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+MADZINE-debug.so:00040804 T __cxxabiv1::__class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+MADZINE-debug.so:000408c8 T __cxxabiv1::__class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+MADZINE-debug.so:00040860 T __cxxabiv1::__class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+MADZINE-debug.so:00040ca0 T __cxxabiv1::__si_class_type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__upcast_result&) const
+MADZINE-debug.so:00040bc4 T __cxxabiv1::__si_class_type_info::__do_dyncast(int, __cxxabiv1::__class_type_info::__sub_kind, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info const*, void const*, __cxxabiv1::__class_type_info::__dyncast_result&) const
+MADZINE-debug.so:00040b58 T __cxxabiv1::__si_class_type_info::__do_find_public_src(int, void const*, __cxxabiv1::__class_type_info const*, void const*) const
+MADZINE-debug.so:         U VCVModuleWrapper::get_output(int) const
+MADZINE-debug.so:         U VCVModuleWrapper::get_led_brightness(int) const
+MADZINE-debug.so:         U VCVModuleWrapper::get_param(int) const
+MADZINE-debug.so:00041788 T std::bad_exception::what() const
+MADZINE-debug.so:00040d78 T std::bad_function_call::what() const
+MADZINE-debug.so:00041778 T std::exception::what() const
+MADZINE-debug.so:00040d64 T std::type_info::__do_catch(std::type_info const*, void**, unsigned int) const
+MADZINE-debug.so:00040cf0 T std::type_info::__do_upcast(__cxxabiv1::__class_type_info const*, void**) const
+MADZINE-debug.so:00040ce8 T std::type_info::__is_pointer_p() const
+MADZINE-debug.so:00040ce8 T std::type_info::__is_function_p() const
+MADZINE-debug.so:00040d18 T std::type_info::__equal(std::type_info const&) const
+MADZINE-debug.so:00040d18 T std::type_info::operator==(std::type_info const&) const
+MADZINE-debug.so:000417b8 T std::bad_exception::~bad_exception()
+MADZINE-debug.so:00041744 T std::bad_exception::~bad_exception()
+MADZINE-debug.so:00041744 T std::bad_exception::~bad_exception()
+MADZINE-debug.so:0002183c t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:00021154 t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:000218d4 t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002116c t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002196c t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:00021184 t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:000217a4 t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:00021140 t std::_Function_handler<bool (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b0bc t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ad48 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b154 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ad60 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b1ec t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ad78 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b024 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ad34 t std::_Function_handler<bool (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:000217f0 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:000233f8 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:00021888 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:00022f60 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:00021920 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:00022ab4 t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:000219bc t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002119c t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002480c t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:000211ac t std::_Function_handler<void (), MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b070 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002b778 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b108 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002bbc0 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b1a0 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002c020 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002b23c t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ad90 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:0002c994 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}>::_M_manager(std::_Any_data&, std::_Any_data const&, std::_Manager_operation)
+MADZINE-debug.so:0002ada0 t std::_Function_handler<void (), PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}>::_M_invoke(std::_Any_data const&)
+MADZINE-debug.so:00040dbc T std::bad_function_call::~bad_function_call()
+MADZINE-debug.so:00040d88 T std::bad_function_call::~bad_function_call()
+MADZINE-debug.so:00040d88 T std::bad_function_call::~bad_function_call()
+MADZINE-debug.so:000319fc t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:0003182c t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:0003192c t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:00031860 t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00031828 t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00031828 t std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00021a0c t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:000211cc t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:00021554 t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:000214c8 t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:000211c8 t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:000211c8 t std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0001b990 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:0001b824 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:0001b8c0 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:0001b834 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0001b820 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0001b820 t std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0003bc74 t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:0003af70 t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:0003b644 t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:0003b5b8 t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0003af6c t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0003af6c t std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0000cac4 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:0000c714 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:0000c7b0 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:0000c724 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0000c710 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0000c710 t std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0001735c t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:00016ea4 t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:000171a4 t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:00017118 t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00016ea0 t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00016ea0 t std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0002b28c t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:0002adbc t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:0002af54 t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:0002aec4 t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0002adb8 t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0002adb8 t std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0001135c t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:00010b24 t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:00010bc0 t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:00010b34 t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00010b20 t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00010b20 t std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00038084 t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_destroy()
+MADZINE-debug.so:00037520 t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_dispose()
+MADZINE-debug.so:000375bc t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::_M_get_deleter(std::type_info const&)
+MADZINE-debug.so:00037530 t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0003751c t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:0003751c t std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>::~_Sp_counted_ptr_inplace()
+MADZINE-debug.so:00038a7c t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_dispose()
+MADZINE-debug.so:00027858 t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_assign(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+MADZINE-debug.so:00021a14 t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] [clone .isra.0]
+MADZINE-debug.so:00031a04 t std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string<std::allocator<char> >(char const*, std::allocator<char> const&) [clone .constprop.0] [clone .isra.0]
+MADZINE-debug.so:00041798 T std::exception::~exception()
+MADZINE-debug.so:00041740 T std::exception::~exception()
+MADZINE-debug.so:00041740 T std::exception::~exception()
+MADZINE-debug.so:00040cf8 T std::type_info::~type_info()
+MADZINE-debug.so:00040ce4 T std::type_info::~type_info()
+MADZINE-debug.so:00040ce4 T std::type_info::~type_info()
+MADZINE-debug.so:0004184c T std::get_new_handler()
+MADZINE-debug.so:00041820 T std::set_new_handler(void (*)())
+MADZINE-debug.so:0000b260 T std::__throw_bad_cast()
+MADZINE-debug.so:0000b250 T std::__throw_bad_alloc()
+MADZINE-debug.so:0000b268 T std::__throw_bad_typeid()
+MADZINE-debug.so:0000b270 T std::__throw_logic_error(char const*)
+MADZINE-debug.so:0000b2a0 T std::__throw_range_error(char const*)
+MADZINE-debug.so:0000b278 T std::__throw_domain_error(char const*)
+MADZINE-debug.so:0000b288 T std::__throw_length_error(char const*)
+MADZINE-debug.so:0000b290 T std::__throw_out_of_range(char const*)
+MADZINE-debug.so:0000b248 T std::__throw_bad_exception()
+MADZINE-debug.so:0000b298 T std::__throw_runtime_error(char const*)
+MADZINE-debug.so:0000b2a8 T std::__throw_overflow_error(char const*)
+MADZINE-debug.so:0000b2b0 T std::__throw_underflow_error(char const*)
+MADZINE-debug.so:0000b280 T std::__throw_invalid_argument(char const*)
+MADZINE-debug.so:00040d68 T std::__throw_out_of_range_fmt(char const*, ...)
+MADZINE-debug.so:0000b2b8 T std::__throw_bad_function_call()
+MADZINE-debug.so:0000b258 T std::__throw_bad_array_new_length()
+MADZINE-debug.so:000458e4 R std::nothrow
+MADZINE-debug.so:00048ce8 d typeinfo for TWNCWidget
+MADZINE-debug.so:00047e10 d typeinfo for ADGenerator
+MADZINE-debug.so:00048388 d typeinfo for MADDYWidget
+MADZINE-debug.so:00048ad4 d typeinfo for PPaTTTerning
+MADZINE-debug.so:00048158 d typeinfo for PinppleWidget
+MADZINE-debug.so:000491ac d typeinfo for ObserverWidget
+MADZINE-debug.so:00048f40 d typeinfo for QQScopeDisplay
+MADZINE-debug.so:00046b78 d typeinfo for SwingLFOWidget
+MADZINE-debug.so:000470b4 d typeinfo for EuclideanRhythm
+MADZINE-debug.so:00047e1c d typeinfo for ADGeneratorWidget
+MADZINE-debug.so:00048370 d typeinfo for ModeParamQuantity
+MADZINE-debug.so:00048ae0 d typeinfo for PPaTTTerningWidget
+MADZINE-debug.so:00048358 d typeinfo for DensityParamQuantity
+MADZINE-debug.so:000470a8 d typeinfo for DivMultParamQuantity
+MADZINE-debug.so:000491a0 d typeinfo for ObserverScopeDisplay
+MADZINE-debug.so:000470c0 d typeinfo for EuclideanRhythmWidget
+MADZINE-debug.so:0004814c d typeinfo for NoiseMixParamQuantity
+MADZINE-debug.so:00048cd0 d typeinfo for VCAShiftParamQuantity
+MADZINE-debug.so:0004837c d typeinfo for ClockSourceParamQuantity
+MADZINE-debug.so:00048cc4 d typeinfo for TechnoDivMultParamQuantity
+MADZINE-debug.so:00048f34 d typeinfo for QQ
+MADZINE-debug.so:00048cdc d typeinfo for TWNC
+MADZINE-debug.so:00048364 d typeinfo for MADDY
+MADZINE-debug.so:00048140 d typeinfo for Pinpple
+MADZINE-debug.so:00049194 d typeinfo for Observer
+MADZINE-debug.so:00048f4c d typeinfo for QQWidget
+MADZINE-debug.so:00046b6c d typeinfo for SwingLFO
+MADZINE-debug.so:000494c0 D typeinfo for __cxxabiv1::__forced_unwind
+MADZINE-debug.so:000493f4 D typeinfo for __cxxabiv1::__class_type_info
+MADZINE-debug.so:000494c8 D typeinfo for __cxxabiv1::__foreign_exception
+MADZINE-debug.so:0004942c D typeinfo for __cxxabiv1::__si_class_type_info
+MADZINE-debug.so:00046b60 d typeinfo for rack::componentlibrary::PJ301MPort
+MADZINE-debug.so:00047138 d typeinfo for rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047114 d typeinfo for rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:0004715c d typeinfo for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000470f0 d typeinfo for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047120 d typeinfo for rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00047e34 d typeinfo for rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00048394 d typeinfo for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047e28 d typeinfo for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000470fc d typeinfo for rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00046b48 d typeinfo for rack::componentlibrary::RoundBlackKnob
+MADZINE-debug.so:00047144 d typeinfo for rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00047090 d typeinfo for rack::componentlibrary::RoundSmallBlackKnob
+MADZINE-debug.so:000470cc d typeinfo for rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>
+MADZINE-debug.so:00046b54 d typeinfo for rack::componentlibrary::Trimpot
+MADZINE-debug.so:00046b3c d typeinfo for rack::componentlibrary::RoundKnob
+MADZINE-debug.so:000470d8 d typeinfo for rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:0004712c d typeinfo for rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047108 d typeinfo for rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047150 d typeinfo for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000470e4 d typeinfo for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:0004709c d typeinfo for rack::componentlibrary::VCVButton
+MADZINE-debug.so:         U typeinfo for rack::ui::MenuItem
+MADZINE-debug.so:         U typeinfo for rack::app::LedDisplay
+MADZINE-debug.so:         U typeinfo for rack::app::PortWidget
+MADZINE-debug.so:         U typeinfo for rack::app::ModuleWidget
+MADZINE-debug.so:         U typeinfo for rack::app::ModuleLightWidget
+MADZINE-debug.so:         U typeinfo for rack::app::SvgKnob
+MADZINE-debug.so:00046b30 d typeinfo for rack::app::SvgPort
+MADZINE-debug.so:         U typeinfo for rack::app::SvgSwitch
+MADZINE-debug.so:         U typeinfo for rack::engine::ParamQuantity
+MADZINE-debug.so:         U typeinfo for rack::engine::Module
+MADZINE-debug.so:00046b28 d typeinfo for rack::plugin::Model
+MADZINE-debug.so:0004834c d typeinfo for rack::widget::OpaqueWidget
+MADZINE-debug.so:         U typeinfo for rack::widget::Widget
+MADZINE-debug.so:00046b0c V typeinfo for std::_Mutex_base<(__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000494b4 D typeinfo for std::bad_exception
+MADZINE-debug.so:00046b1c V typeinfo for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:0004948c D typeinfo for std::bad_function_call
+MADZINE-debug.so:00046b14 V typeinfo for std::_Sp_make_shared_tag
+MADZINE-debug.so:00048d00 d typeinfo for std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00048424 d typeinfo for std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00048170 d typeinfo for std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000491c4 d typeinfo for std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046b90 d typeinfo for std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00047e4c d typeinfo for std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00048b40 d typeinfo for std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00047174 d typeinfo for std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00048f64 d typeinfo for std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000494ac D typeinfo for std::exception
+MADZINE-debug.so:00049464 D typeinfo for std::type_info
+MADZINE-debug.so:000483a0 d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu
+MADZINE-debug.so:000483e4 d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}
+MADZINE-debug.so:000483ec d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}
+MADZINE-debug.so:000483f4 d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}
+MADZINE-debug.so:000483fc d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}
+MADZINE-debug.so:00048404 d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}
+MADZINE-debug.so:0004840c d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}
+MADZINE-debug.so:00048414 d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}
+MADZINE-debug.so:0004841c d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}
+MADZINE-debug.so:000483dc d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}
+MADZINE-debug.so:00048b00 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}
+MADZINE-debug.so:00048b08 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}
+MADZINE-debug.so:00048b10 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}
+MADZINE-debug.so:00048b18 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}
+MADZINE-debug.so:00048b20 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}
+MADZINE-debug.so:00048b28 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}
+MADZINE-debug.so:00048b30 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}
+MADZINE-debug.so:00048b38 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}
+MADZINE-debug.so:00048af8 d typeinfo for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}
+MADZINE-debug.so:00047e40 d typeinfo for rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00048aec d typeinfo for rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00047168 d typeinfo for rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00048f58 d typeinfo for rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00048cf4 d typeinfo for rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:000483d0 d typeinfo for rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00048164 d typeinfo for rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:000491b8 d typeinfo for rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046b84 d typeinfo for rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:000483c4 d typeinfo for rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:000483b8 d typeinfo for rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:000483ac d typeinfo for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem
+MADZINE-debug.so:00044c7c r typeinfo name for TWNCWidget
+MADZINE-debug.so:00043810 r typeinfo name for ADGenerator
+MADZINE-debug.so:00043ec8 r typeinfo name for MADDYWidget
+MADZINE-debug.so:0004463c r typeinfo name for PPaTTTerning
+MADZINE-debug.so:00043b98 r typeinfo name for PinppleWidget
+MADZINE-debug.so:00045048 r typeinfo name for ObserverWidget
+MADZINE-debug.so:00044ea0 r typeinfo name for QQScopeDisplay
+MADZINE-debug.so:00042c80 r typeinfo name for SwingLFOWidget
+MADZINE-debug.so:00042fe8 r typeinfo name for EuclideanRhythm
+MADZINE-debug.so:00043820 r typeinfo name for ADGeneratorWidget
+MADZINE-debug.so:00043e98 r typeinfo name for ModeParamQuantity
+MADZINE-debug.so:0004464c r typeinfo name for PPaTTTerningWidget
+MADZINE-debug.so:00043e78 r typeinfo name for DensityParamQuantity
+MADZINE-debug.so:00042fd0 r typeinfo name for DivMultParamQuantity
+MADZINE-debug.so:00045030 r typeinfo name for ObserverScopeDisplay
+MADZINE-debug.so:00042ffc r typeinfo name for EuclideanRhythmWidget
+MADZINE-debug.so:00043b80 r typeinfo name for NoiseMixParamQuantity
+MADZINE-debug.so:00044c5c r typeinfo name for VCAShiftParamQuantity
+MADZINE-debug.so:00043eac r typeinfo name for ClockSourceParamQuantity
+MADZINE-debug.so:00044c3c r typeinfo name for TechnoDivMultParamQuantity
+MADZINE-debug.so:00044e9c r typeinfo name for QQ
+MADZINE-debug.so:00044c74 r typeinfo name for TWNC
+MADZINE-debug.so:00043e90 r typeinfo name for MADDY
+MADZINE-debug.so:00043b74 r typeinfo name for Pinpple
+MADZINE-debug.so:00045024 r typeinfo name for Observer
+MADZINE-debug.so:00044eb4 r typeinfo name for QQWidget
+MADZINE-debug.so:00042c74 r typeinfo name for SwingLFO
+MADZINE-debug.so:000458a0 R typeinfo name for __cxxabiv1::__forced_unwind
+MADZINE-debug.so:00045520 R typeinfo name for __cxxabiv1::__class_type_info
+MADZINE-debug.so:000458c0 R typeinfo name for __cxxabiv1::__foreign_exception
+MADZINE-debug.so:00045544 R typeinfo name for __cxxabiv1::__si_class_type_info
+MADZINE-debug.so:00042c4c r typeinfo name for rack::componentlibrary::PJ301MPort
+MADZINE-debug.so:000433d4 r typeinfo name for rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043284 r typeinfo name for rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043534 r typeinfo name for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043138 r typeinfo name for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000432fc r typeinfo name for rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:000438a8 r typeinfo name for rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043ed8 r typeinfo name for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043834 r typeinfo name for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000431ac r typeinfo name for rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00042bfc r typeinfo name for rack::componentlibrary::RoundBlackKnob
+MADZINE-debug.so:0004344c r typeinfo name for rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00042f7c r typeinfo name for rack::componentlibrary::RoundSmallBlackKnob
+MADZINE-debug.so:00043014 r typeinfo name for rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>
+MADZINE-debug.so:00042c28 r typeinfo name for rack::componentlibrary::Trimpot
+MADZINE-debug.so:00042bd8 r typeinfo name for rack::componentlibrary::RoundKnob
+MADZINE-debug.so:00043064 r typeinfo name for rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00043360 r typeinfo name for rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00043210 r typeinfo name for rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000434b8 r typeinfo name for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000430c4 r typeinfo name for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00042fac r typeinfo name for rack::componentlibrary::VCVButton
+MADZINE-debug.so:00042bc4 r typeinfo name for rack::app::SvgPort
+MADZINE-debug.so:00042bac r typeinfo name for rack::plugin::Model
+MADZINE-debug.so:00043e58 r typeinfo name for rack::widget::OpaqueWidget
+MADZINE-debug.so:00042b30 V typeinfo name for std::_Mutex_base<(__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:0004588c R typeinfo name for std::bad_exception
+MADZINE-debug.so:00042b78 V typeinfo name for std::_Sp_counted_base<(__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00045590 R typeinfo name for std::bad_function_call
+MADZINE-debug.so:00042b60 V typeinfo name for std::_Sp_make_shared_tag
+MADZINE-debug.so:00044cfc r typeinfo name for std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000443a4 r typeinfo name for std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00043c1c r typeinfo name for std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000450d4 r typeinfo name for std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00042d0c r typeinfo name for std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:0004399c r typeinfo name for std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00044948 r typeinfo name for std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00043638 r typeinfo name for std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00044f28 r typeinfo name for std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:0004587c R typeinfo name for std::exception
+MADZINE-debug.so:0004556c R typeinfo name for std::type_info
+MADZINE-debug.so:00043f58 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu
+MADZINE-debug.so:000441c4 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}
+MADZINE-debug.so:00044200 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}
+MADZINE-debug.so:0004423c r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}
+MADZINE-debug.so:00044278 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}
+MADZINE-debug.so:000442b4 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}
+MADZINE-debug.so:000442f0 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}
+MADZINE-debug.so:0004432c r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}
+MADZINE-debug.so:00044368 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}
+MADZINE-debug.so:00044188 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}
+MADZINE-debug.so:00044728 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#2}
+MADZINE-debug.so:0004476c r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#3}
+MADZINE-debug.so:000447b0 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#4}
+MADZINE-debug.so:000447f4 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#5}
+MADZINE-debug.so:00044838 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#6}
+MADZINE-debug.so:0004487c r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#7}
+MADZINE-debug.so:000448c0 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#8}
+MADZINE-debug.so:00044904 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#9}
+MADZINE-debug.so:000446e4 r typeinfo name for PPaTTTerningWidget::appendContextMenu(rack::ui::Menu*)::{lambda()#1}
+MADZINE-debug.so:00043920 r typeinfo name for rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00044664 r typeinfo name for rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:000435b4 r typeinfo name for rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00044ec0 r typeinfo name for rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00044c8c r typeinfo name for rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00044118 r typeinfo name for rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00043ba8 r typeinfo name for rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:0004505c r typeinfo name for rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00042c94 r typeinfo name for rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00044098 r typeinfo name for rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:0004400c r typeinfo name for rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:00043fa0 r typeinfo name for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem
+MADZINE-debug.so:00048e84 d vtable for TWNCWidget
+MADZINE-debug.so:00047e58 d vtable for ADGenerator
+MADZINE-debug.so:000486ac d vtable for MADDYWidget
+MADZINE-debug.so:00048b4c d vtable for PPaTTTerning
+MADZINE-debug.so:0004829c d vtable for PinppleWidget
+MADZINE-debug.so:00049344 d vtable for ObserverWidget
+MADZINE-debug.so:00049038 d vtable for QQScopeDisplay
+MADZINE-debug.so:00046fe0 d vtable for SwingLFOWidget
+MADZINE-debug.so:00047340 d vtable for EuclideanRhythm
+MADZINE-debug.so:00047f20 d vtable for ADGeneratorWidget
+MADZINE-debug.so:000485fc d vtable for ModeParamQuantity
+MADZINE-debug.so:00048c14 d vtable for PPaTTTerningWidget
+MADZINE-debug.so:000484dc d vtable for DensityParamQuantity
+MADZINE-debug.so:000472e8 d vtable for DivMultParamQuantity
+MADZINE-debug.so:00049298 d vtable for ObserverScopeDisplay
+MADZINE-debug.so:00047408 d vtable for EuclideanRhythmWidget
+MADZINE-debug.so:00048244 d vtable for NoiseMixParamQuantity
+MADZINE-debug.so:00048d64 d vtable for VCAShiftParamQuantity
+MADZINE-debug.so:00048654 d vtable for ClockSourceParamQuantity
+MADZINE-debug.so:00048d0c d vtable for TechnoDivMultParamQuantity
+MADZINE-debug.so:00048f70 d vtable for QQ
+MADZINE-debug.so:00048dbc d vtable for TWNC
+MADZINE-debug.so:00048534 d vtable for MADDY
+MADZINE-debug.so:0004817c d vtable for Pinpple
+MADZINE-debug.so:000491d0 d vtable for Observer
+MADZINE-debug.so:000490e4 d vtable for QQWidget
+MADZINE-debug.so:00046f18 d vtable for SwingLFO
+MADZINE-debug.so:000494f8 D vtable for __cxxabiv1::__forced_unwind
+MADZINE-debug.so:00049400 D vtable for __cxxabiv1::__class_type_info
+MADZINE-debug.so:0004950c D vtable for __cxxabiv1::__foreign_exception
+MADZINE-debug.so:00049438 D vtable for __cxxabiv1::__si_class_type_info
+MADZINE-debug.so:00046e68 d vtable for rack::componentlibrary::PJ301MPort
+MADZINE-debug.so:00047b30 d vtable for rack::componentlibrary::SmallLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047908 d vtable for rack::componentlibrary::SmallLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047d58 d vtable for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000476e0 d vtable for rack::componentlibrary::SmallLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:000479c0 d vtable for rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00048088 d vtable for rack::componentlibrary::MediumLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:0004875c d vtable for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047fd0 d vtable for rack::componentlibrary::MediumLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047798 d vtable for rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00046d00 d vtable for rack::componentlibrary::RoundBlackKnob
+MADZINE-debug.so:00047be8 d vtable for rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00047180 d vtable for rack::componentlibrary::RoundSmallBlackKnob
+MADZINE-debug.so:000474b8 d vtable for rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget>
+MADZINE-debug.so:00046db4 d vtable for rack::componentlibrary::Trimpot
+MADZINE-debug.so:00046c4c d vtable for rack::componentlibrary::RoundKnob
+MADZINE-debug.so:00047570 d vtable for rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> >
+MADZINE-debug.so:00047a78 d vtable for rack::componentlibrary::TSvgLight<rack::componentlibrary::TBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047850 d vtable for rack::componentlibrary::TSvgLight<rack::componentlibrary::TGreenLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047ca0 d vtable for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedGreenBlueLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047628 d vtable for rack::componentlibrary::TSvgLight<rack::componentlibrary::TRedLight<rack::componentlibrary::TGrayModuleLightWidget<rack::app::ModuleLightWidget> > >
+MADZINE-debug.so:00047234 d vtable for rack::componentlibrary::VCVButton
+MADZINE-debug.so:         U vtable for rack::ui::MenuItem
+MADZINE-debug.so:         U vtable for rack::ui::MenuLabel
+MADZINE-debug.so:         U vtable for rack::app::LedDisplay
+MADZINE-debug.so:         U vtable for rack::app::SvgKnob
+MADZINE-debug.so:00046b9c d vtable for rack::app::SvgPort
+MADZINE-debug.so:         U vtable for rack::engine::ParamQuantity
+MADZINE-debug.so:         U vtable for rack::engine::SwitchQuantity
+MADZINE-debug.so:         U vtable for rack::engine::PortInfo
+MADZINE-debug.so:         U vtable for rack::engine::LightInfo
+MADZINE-debug.so:00046920 d vtable for rack::plugin::Model
+MADZINE-debug.so:00048430 d vtable for rack::widget::OpaqueWidget
+MADZINE-debug.so:000494e4 D vtable for std::bad_exception
+MADZINE-debug.so:00049498 D vtable for std::bad_function_call
+MADZINE-debug.so:00046a88 d vtable for std::_Sp_counted_ptr_inplace<TWNCWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046a20 d vtable for std::_Sp_counted_ptr_inplace<MADDYWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000469ec d vtable for std::_Sp_counted_ptr_inplace<PinppleWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046af0 d vtable for std::_Sp_counted_ptr_inplace<ObserverWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046950 d vtable for std::_Sp_counted_ptr_inplace<SwingLFOWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000469b8 d vtable for std::_Sp_counted_ptr_inplace<ADGeneratorWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046a54 d vtable for std::_Sp_counted_ptr_inplace<PPaTTTerningWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046984 d vtable for std::_Sp_counted_ptr_inplace<EuclideanRhythmWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:00046abc d vtable for std::_Sp_counted_ptr_inplace<QQWidget, std::allocator<void>, (__gnu_cxx::_Lock_policy)0>
+MADZINE-debug.so:000494d0 D vtable for std::exception
+MADZINE-debug.so:0004946c D vtable for std::type_info
+MADZINE-debug.so:00048814 d vtable for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu
+MADZINE-debug.so:000469a0 d vtable for rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046a3c d vtable for rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:0004696c d vtable for rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046aa4 d vtable for rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046a70 d vtable for rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046a08 d vtable for rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:000469d4 d vtable for rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046ad8 d vtable for rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00046938 d vtable for rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT
+MADZINE-debug.so:00048a24 d vtable for rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:00048974 d vtable for rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item
+MADZINE-debug.so:000488c4 d vtable for MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem
+MADZINE-debug.so:00023f9c t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()
+MADZINE-debug.so:00021c3c t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::~TrackShiftMenu()
+MADZINE-debug.so:00021aa4 t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::~TrackShiftMenu()
+MADZINE-debug.so:00021aa4 t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::~TrackShiftMenu()
+MADZINE-debug.so:0001a47c t rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:0001b368 t rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:00017f24 t rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00017cb8 t rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00017cb8 t rack::createModel<ADGenerator, ADGeneratorWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00031654 t rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:0002fa30 t rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0002b500 t rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0002b294 t rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0002b294 t rack::createModel<PPaTTTerning, PPaTTTerningWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00014dc4 t rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:00016968 t rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:000118a0 t rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00011634 t rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00011634 t rack::createModel<EuclideanRhythm, EuclideanRhythmWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003a408 t rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:0003aab4 t rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:000382f8 t rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003808c t rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003808c t rack::createModel<QQ, QQWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003665c t rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:00037054 t rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:00032078 t rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00031e0c t rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00031e0c t rack::createModel<TWNC, TWNCWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00028fdc t rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:00027468 t rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0002283c t rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:000225d0 t rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:000225d0 t rack::createModel<MADDY, MADDYWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0002005c t rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:00020c54 t rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0001c1b0 t rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0001bf44 t rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0001bf44 t rack::createModel<Pinpple, PinppleWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003e100 t rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:0003eca4 t rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0003bee8 t rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003bc7c t rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0003bc7c t rack::createModel<Observer, ObserverWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0000f758 t rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModule()
+MADZINE-debug.so:000105bc t rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::createModuleWidget(rack::engine::Module*)
+MADZINE-debug.so:0000d688 t rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0000d1a4 t rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:0000d1a4 t rack::createModel<SwingLFO, SwingLFOWidget>(std::basic_string_view<char, std::char_traits<char> >)::ModelT::~ModelT()
+MADZINE-debug.so:00021670 t rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:00021d80 t rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:00021ccc t rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:00021ccc t rack::createMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:0002494c t rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item::step()
+MADZINE-debug.so:00021624 t rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:000221b4 t rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:00021e40 t rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:00021e40 t rack::createCheckMenuItem<rack::ui::MenuItem>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::function<bool ()>, std::function<void ()>, bool, bool)::Item::~Item()
+MADZINE-debug.so:00042d5c V std::_Sp_make_shared_tag::_S_ti()::__tag
+MADZINE-debug.so:00021118 t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem::onAction(rack::widget::Widget::ActionEvent const&)
+MADZINE-debug.so:00021bac t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem::~ShiftMenuItem()
+MADZINE-debug.so:00021b28 t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem::~ShiftMenuItem()
+MADZINE-debug.so:00021b28 t MADDYWidget::appendContextMenu(rack::ui::Menu*)::TrackShiftMenu::createChildMenu()::ShiftMenuItem::~ShiftMenuItem()
+MADZINE-debug.so:0004173c T operator delete(void*)
+MADZINE-debug.so:000409a0 T operator delete(void*, unsigned int)
+MADZINE-debug.so:00040acc T operator new(unsigned int)
+MADZINE-debug.so:000425fc t __adddf3
+MADZINE-debug.so:000425fc t __aeabi_dadd
+MADZINE-debug.so:000425f0 t __aeabi_drsub
+MADZINE-debug.so:000425f8 t __aeabi_dsub
+MADZINE-debug.so:000428b8 t __aeabi_f2d
+MADZINE-debug.so:00042894 t __aeabi_i2d
+MADZINE-debug.so:0004290c t __aeabi_l2d
+MADZINE-debug.so:00042874 t __aeabi_ui2d
+MADZINE-debug.so:000428fc t __aeabi_ul2d
+MADZINE-debug.so:         w __cxa_pure_virtual
+MADZINE-debug.so:000409a4 T __dynamic_cast
+MADZINE-debug.so:0003ff10 t __errno
+MADZINE-debug.so:00045178 r __exp2f_data
+MADZINE-debug.so:000428b8 t __extendsfdf2
+MADZINE-debug.so:0004290c t __floatdidf
+MADZINE-debug.so:00042894 t __floatsidf
+MADZINE-debug.so:000428fc t __floatundidf
+MADZINE-debug.so:00042874 t __floatunsidf
+MADZINE-debug.so:0003f33c t __fpclassifyf
+MADZINE-debug.so:00041228 t __ieee754_rem_pio2
+MADZINE-debug.so:000453e0 r __inv_pio4
+MADZINE-debug.so:00040dd8 t __kernel_cos
+MADZINE-debug.so:00041860 t __kernel_rem_pio2
+MADZINE-debug.so:00040f10 t __kernel_sin
+MADZINE-debug.so:00040fc8 t __kernel_tan
+MADZINE-debug.so:000452c0 r __logf_data
+MADZINE-debug.so:0003fcfc t __math_divzerof
+MADZINE-debug.so:0003fd20 t __math_invalidf
+MADZINE-debug.so:0003fce4 t __math_may_uflowf
+MADZINE-debug.so:0003fcf0 t __math_oflowf
+MADZINE-debug.so:0003fcd8 t __math_uflowf
+MADZINE-debug.so:00045730 r __powf_log2_data
+MADZINE-debug.so:00045440 r __sincosf_table
+MADZINE-debug.so:000425f8 t __subdf3
+MADZINE-debug.so:         U _impure_ptr
+MADZINE-debug.so:00080000 B _stack
+MADZINE-debug.so:         U abort
+MADZINE-debug.so:0003fd3c t ceilf
+MADZINE-debug.so:0003f4a4 t exp2f
+MADZINE-debug.so:0003f398 t expf
+MADZINE-debug.so:000424b0 t floor
+MADZINE-debug.so:0003fdf0 t floorf
+MADZINE-debug.so:0003f29c t fmaxf
+MADZINE-debug.so:0003f2ec t fminf
+MADZINE-debug.so:         U free
+MADZINE-debug.so:0000c508 T init
+MADZINE-debug.so:000458e8 r init_jk
+MADZINE-debug.so:         U json_array
+MADZINE-debug.so:         U json_array_append_new
+MADZINE-debug.so:         U json_array_get
+MADZINE-debug.so:         U json_false
+MADZINE-debug.so:         U json_integer
+MADZINE-debug.so:         U json_integer_value
+MADZINE-debug.so:         U json_object
+MADZINE-debug.so:         U json_object_get
+MADZINE-debug.so:         U json_object_set_new
+MADZINE-debug.so:         U json_real
+MADZINE-debug.so:         U json_real_value
+MADZINE-debug.so:         U json_true
+MADZINE-debug.so:0003f59c t logf
+MADZINE-debug.so:         U malloc
+MADZINE-debug.so:0003ff30 t memcpy
+MADZINE-debug.so:000401b8 t memmove
+MADZINE-debug.so:0004061c t memset
+MADZINE-debug.so:00049a7c b modelADGenerator
+MADZINE-debug.so:00049a48 b modelEuclideanRhythm
+MADZINE-debug.so:00049ab4 b modelMADDY
+MADZINE-debug.so:00049b44 b modelObserver
+MADZINE-debug.so:00049ae8 b modelPPaTTTerning
+MADZINE-debug.so:00049aa0 b modelPinpple
+MADZINE-debug.so:00049b30 b modelQQ
+MADZINE-debug.so:00049a44 b modelSwingLFO
+MADZINE-debug.so:00049b1c b modelTWNC
+MADZINE-debug.so:         U modelTWNCLight
+MADZINE-debug.so:000455a8 r npio2_hw
+MADZINE-debug.so:         U nvgBeginPath
+MADZINE-debug.so:         U nvgFill
+MADZINE-debug.so:         U nvgFillColor
+MADZINE-debug.so:         U nvgLineCap
+MADZINE-debug.so:         U nvgLineTo
+MADZINE-debug.so:         U nvgMoveTo
+MADZINE-debug.so:         U nvgRGB
+MADZINE-debug.so:         U nvgRGBA
+MADZINE-debug.so:         U nvgRect
+MADZINE-debug.so:         U nvgResetScissor
+MADZINE-debug.so:         U nvgRestore
+MADZINE-debug.so:         U nvgSave
+MADZINE-debug.so:         U nvgScissor
+MADZINE-debug.so:         U nvgStroke
+MADZINE-debug.so:         U nvgStrokeColor
+MADZINE-debug.so:         U nvgStrokeWidth
+MADZINE-debug.so:00049a40 b pluginInstance
+MADZINE-debug.so:0003f690 t powf
+MADZINE-debug.so:0003feac t roundf
+MADZINE-debug.so:00042378 t scalbn
+MADZINE-debug.so:0003f184 t sin
+MADZINE-debug.so:0003fa48 t sinf
+MADZINE-debug.so:00041518 T strcmp
+MADZINE-debug.so:00040774 t strlen
+MADZINE-debug.so:0003f22c t tan
+MADZINE-debug.so:00045628 r two_over_pi
+MADZINE-debug.so:0003fc9c t with_errnof
+MADZINE-debug.so:0003fcc0 t xflowf

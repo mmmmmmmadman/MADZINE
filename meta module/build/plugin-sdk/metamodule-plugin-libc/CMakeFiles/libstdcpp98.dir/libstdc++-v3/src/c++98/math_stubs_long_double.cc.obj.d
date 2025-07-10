@@ -1,0 +1,26 @@
+plugin-sdk/metamodule-plugin-libc/CMakeFiles/libstdcpp98.dir/libstdc++-v3/src/c++98/math_stubs_long_double.cc.obj: \
+ /Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/metamodule-plugin-libc/libstdc++-v3/src/c++98/math_stubs_long_double.cc \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/cmath \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/c++config.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/os_defines.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/arm-none-eabi/thumb/v7ve+simd/hard/bits/cpu_defines.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/cpp_type_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/ext/type_traits.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/math.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/reent.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/_ansi.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/newlib.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/_newlib_version.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/config.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/machine/ieeefp.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/features.h \
+ /opt/arm-gnu-toolchain/lib/gcc/arm-none-eabi/12.3.1/include/stddef.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/_types.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/machine/_types.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/machine/_default_types.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/lock.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/sys/cdefs.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/_ansi.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/c++/12.3.1/bits/std_abs.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/stdlib.h \
+ /opt/arm-gnu-toolchain/arm-none-eabi/include/machine/stdlib.h

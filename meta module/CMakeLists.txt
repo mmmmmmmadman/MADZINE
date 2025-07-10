@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.22)
 include(../metamodule-plugin-sdk/plugin.cmake)
 
 project(MADZINE 
-    VERSION 2.1.0 
+    VERSION 2.1.3 
     DESCRIPTION "MADZINE Modules for MetaModule" 
     LANGUAGES C CXX ASM
 )

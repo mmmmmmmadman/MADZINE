@@ -13,6 +13,7 @@ void init(Plugin* p) {
     p->addModel(modelPPaTTTerning);
     p->addModel(modelMADDY);
     p->addModel(modelTWNC);
+    p->addModel(modelTWNCLight);
     p->addModel(modelQQ);
     p->addModel(modelObserver);
 }

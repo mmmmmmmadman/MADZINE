@@ -11,5 +11,6 @@ extern Model* modelPinpple;
 extern Model* modelMADDY;
 extern Model* modelPPaTTTerning;
 extern Model* modelTWNC;
+extern Model* modelTWNCLight;
 extern Model* modelQQ;
 extern Model* modelObserver;

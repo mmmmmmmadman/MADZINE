@@ -239,59 +239,59 @@ struct MADDY : Module {
         }
         
         void stepTrack() {
-            currentStep = (currentStep + 1) % length;
-            gateState = pattern[currentStep];
-            if (gateState) {
-                trigPulse.trigger(0.001f);
-                envelopePhase = ATTACK;
-                envelopePhaseTime = 0.0f;
-                justTriggered = true;
-            }
+               currentStep = (currentStep + 1) % length;
+               gateState = pattern[currentStep];
+               if (gateState) {
+                  trigPulse.trigger(0.001f);
+                  envelopePhase = ATTACK;
+                  envelopePhaseTime = 0.0f;
+                  justTriggered = true;
+                }
         }
         
-        float processEnvelope(float sampleTime, float decayParam) {
-            if (envelopePhase == ATTACK && envelopePhaseTime == 0.0f) {
-                float sqrtDecay = std::pow(decayParam, 0.33f);
-                float mappedDecay = rescale(sqrtDecay, 0.0f, 1.0f, 0.0f, 0.8f);
-                curve = rescale(decayParam, 0.0f, 1.0f, -0.8f, -0.45f);
-                currentDecayTime = std::pow(10.0f, (mappedDecay - 0.8f) * 5.0f);
-                currentDecayTime = std::max(0.01f, currentDecayTime);
-                lastUsedDecayParam = decayParam;
-            }
+       float processEnvelope(float sampleTime, float decayParam) {
+    if (envelopePhase == ATTACK && envelopePhaseTime == 0.0f) {
+        float sqrtDecay = std::pow(decayParam, 0.33f);
+        float mappedDecay = rescale(sqrtDecay, 0.0f, 1.0f, 0.0f, 0.8f);
+        curve = rescale(decayParam, 0.0f, 1.0f, -0.8f, -0.45f);
+        currentDecayTime = std::pow(10.0f, (mappedDecay - 0.8f) * 5.0f);
+        currentDecayTime = std::max(0.01f, currentDecayTime);
+        lastUsedDecayParam = decayParam;
+    }
+    
+    switch (envelopePhase) {
+        case IDLE:
+            envelopeOutput = 0.0f;
+            break;
             
-            switch (envelopePhase) {
-                case IDLE:
-                    envelopeOutput = 0.0f;
-                    break;
-                    
-                case ATTACK:
-                    envelopePhaseTime += sampleTime;
-                    if (envelopePhaseTime >= attackTime) {
-                        envelopePhase = DECAY;
-                        envelopePhaseTime = 0.0f;
-                        envelopeOutput = 1.0f;
-                    } else {
-                        float t = envelopePhaseTime / attackTime;
-                        envelopeOutput = applyCurve(t, curve);
-                    }
-                    break;
-                    
-                case DECAY:
-                    envelopePhaseTime += sampleTime;
-                    if (envelopePhaseTime >= currentDecayTime) {
-                        envelopeOutput = 0.0f;
-                        envelopePhase = IDLE;
-                        envelopePhaseTime = 0.0f;
-                    } else {
-                        float t = envelopePhaseTime / currentDecayTime;
-                        envelopeOutput = 1.0f - applyCurve(t, curve);
-                    }
-                    break;
+        case ATTACK:
+            envelopePhaseTime += sampleTime;
+            if (envelopePhaseTime >= attackTime) {
+                envelopePhase = DECAY;
+                envelopePhaseTime = 0.0f;
+                envelopeOutput = 1.0f;
+            } else {
+                float t = envelopePhaseTime / attackTime;
+                envelopeOutput = applyCurve(t, curve);
             }
+            break;
             
-            envelopeOutput = clamp(envelopeOutput, 0.0f, 1.0f);
-            return envelopeOutput * 10.0f;
-        }
+        case DECAY:
+            envelopePhaseTime += sampleTime;
+            if (envelopePhaseTime >= currentDecayTime) {
+                envelopeOutput = 0.0f;
+                envelopePhase = IDLE;
+                envelopePhaseTime = 0.0f;
+            } else {
+                float t = envelopePhaseTime / currentDecayTime;
+                envelopeOutput = 1.0f - applyCurve(t, curve);
+            }
+            break;
+    }
+    
+    envelopeOutput = clamp(envelopeOutput, 0.0f, 1.0f);
+    return envelopeOutput * 10.0f;
+}
     };
     TrackState tracks[3];
 
@@ -303,7 +303,7 @@ struct MADDY : Module {
         int trackStartClock[3] = {0, 0, 0};
         dsp::PulseGenerator chainTrigPulse;
         dsp::PulseGenerator clockPulse;
-        
+
         ChainedSequence() {
             for (int i = 0; i < 4; ++i) {
                 trackIndices[i] = -1;
@@ -334,24 +334,24 @@ struct MADDY : Module {
         float processStep(TrackState tracks[], float sampleTime, bool globalClockTriggered, float decayParam, bool& chainTrigger) {
             chainTrigger = false;
             if (trackCount == 0) return 0.0f;
-            
+    
             if (globalClockTriggered) {
                 globalClockCount++;
             }
-            
+    
             if (currentTrackIndex >= trackCount) {
                 currentTrackIndex = 0;
             }
-            
+    
             int activeTrackIdx = trackIndices[currentTrackIndex];
             if (activeTrackIdx < 0 || activeTrackIdx >= 3) {
                 return 0.0f;
             }
-            
+    
             TrackState& activeTrack = tracks[activeTrackIdx];
             int trackCycleClock = calculateTrackCycleClock(activeTrack);
             int elapsedClock = globalClockCount - trackStartClock[activeTrackIdx];
-            
+    
             if (elapsedClock >= trackCycleClock) {
                 currentTrackIndex++;
                 if (currentTrackIndex >= trackCount) {
@@ -362,13 +362,13 @@ struct MADDY : Module {
                 chainTrigger = true;
                 chainTrigPulse.trigger(0.001f);
             }
-            
+    
             chainTrigger = chainTrigger || chainTrigPulse.process(sampleTime) > 0.0f;
             if (tracks[activeTrackIdx].trigPulse.process(sampleTime) > 0.0f) {
                 clockPulse.trigger(0.001f);
             }
 
-            return tracks[activeTrackIdx].processEnvelope(sampleTime, decayParam);
+            return tracks[activeTrackIdx].envelopeOutput * 10.0f;
         }
     };
     ChainedSequence chain12, chain23, chain123;
@@ -401,12 +401,19 @@ struct MADDY : Module {
         configParam(K4_PARAM, -10.0f, 10.0f, 6.0f, "K4", "V");
         configParam(K5_PARAM, -10.0f, 10.0f, 8.0f, "K5", "V");
         
-        configParam(MODE_PARAM, 0.0f, 2.0f, 1.0f, "Mode");
-        getParamQuantity(MODE_PARAM)->snapEnabled = true;
+        configParam(MODE_PARAM, 0.0f, 1.0f, 0.0f, "Mode");
         configParam(DENSITY_PARAM, 0.0f, 1.0f, 0.5f, "Density");
+        delete paramQuantities[DENSITY_PARAM];
+        DensityParamQuantity* densityQuantity = new DensityParamQuantity;
+        densityQuantity->module = this;
+        densityQuantity->paramId = DENSITY_PARAM;
+        densityQuantity->minValue = 0.0f;
+        densityQuantity->maxValue = 1.0f;
+        densityQuantity->defaultValue = 0.5f;
+        densityQuantity->name = "Density";
+        paramQuantities[DENSITY_PARAM] = densityQuantity;
         configParam(CHAOS_PARAM, 0.0f, 1.0f, 0.0f, "Chaos", "%", 0.f, 100.f);
-        configParam(CLOCK_SOURCE_PARAM, 0.0f, 6.0f, 0.0f, "Clock Source");
-        getParamQuantity(CLOCK_SOURCE_PARAM)->snapEnabled = true;
+        configParam(CLOCK_SOURCE_PARAM, 0.0f, 1.0f, 0.0f, "Clock Source");
         
         for (int i = 0; i < 3; ++i) {
             configParam(TRACK1_FILL_PARAM + i * 2, 0.0f, 100.0f, 25.0f, string::f("T%d Fill", i+1), "%");
@@ -548,15 +555,13 @@ struct MADDY : Module {
         json_t* modeJ = json_object_get(rootJ, "modeValue");
         if (modeJ) {
             modeValue = json_integer_value(modeJ);
-            params[MODE_PARAM].setValue((float)modeValue);
         }
-        
+    
         json_t* clockSourceJ = json_object_get(rootJ, "clockSourceValue");
         if (clockSourceJ) {
             clockSourceValue = json_integer_value(clockSourceJ);
-            params[CLOCK_SOURCE_PARAM].setValue((float)clockSourceValue);
         }
-        
+    
         json_t* attackTimesJ = json_object_get(rootJ, "attackTimes");
         if (attackTimesJ) {
             for (int i = 0; i < 3; ++i) {
@@ -566,7 +571,7 @@ struct MADDY : Module {
                 }
             }
         }
-        
+    
         json_t* shiftsJ = json_object_get(rootJ, "shifts");
         if (shiftsJ) {
             for (int i = 0; i < 3; ++i) {
@@ -653,13 +658,11 @@ struct MADDY : Module {
         
         if (modeTrigger.process(params[MODE_PARAM].getValue())) {
             modeValue = (modeValue + 1) % 3;
-            params[MODE_PARAM].setValue((float)modeValue);
             generateMapping();
         }
         
         if (clockSourceTrigger.process(params[CLOCK_SOURCE_PARAM].getValue())) {
             clockSourceValue = (clockSourceValue + 1) % 7;
-            params[CLOCK_SOURCE_PARAM].setValue((float)clockSourceValue);
         }
         
         lights[CLOCK_SOURCE_LIGHT_RED].setBrightness(0.0f);
@@ -795,6 +798,7 @@ struct MADDYWidget : ModuleWidget {
         addParam(createParamCentered<RoundSmallBlackKnob>(Vec(98, 52), module, MADDY::FREQ_PARAM));
         addParam(createParamCentered<RoundSmallBlackKnob>(Vec(60, 85), module, MADDY::SWING_PARAM));
         addOutput(createOutputCentered<PJ301MPort>(Vec(98, 85), module, MADDY::CLK_OUTPUT));
+        
         addParam(createParamCentered<RoundBlackKnob>(Vec(20, 52), module, MADDY::LENGTH_PARAM));
         addParam(createParamCentered<RoundBlackKnob>(Vec(20, 85), module, MADDY::DECAY_PARAM));
         
@@ -803,7 +807,7 @@ struct MADDYWidget : ModuleWidget {
         for (int i = 0; i < 3; ++i) {
             float y = trackY[i];
             addParam(createParamCentered<RoundBlackKnob>(Vec(20, y + 20), module, MADDY::TRACK1_FILL_PARAM + i * 2));
-            addParam(createParamCentered<RoundBlackKnob>(Vec(20, y + 53), module, MADDY::TRACK1_DIVMULT_PARAM + i * 2));
+            addParam(createParamCentered<RoundSmallBlackKnob>(Vec(20, y + 53), module, MADDY::TRACK1_DIVMULT_PARAM + i * 2));
         }
         
         float cvY[5] = {127, 172, 217, 262, 307};
@@ -813,40 +817,34 @@ struct MADDYWidget : ModuleWidget {
         
         addChild(createLightCentered<MediumLight<RedGreenBlueLight>>(Vec(98, 116), module, MADDY::MODE_LIGHT_RED));
         addParam(createParamCentered<VCVButton>(Vec(98, 116), module, MADDY::MODE_PARAM));
+        
         addParam(createParamCentered<RoundBlackKnob>(Vec(98, 154), module, MADDY::DENSITY_PARAM));
         addParam(createParamCentered<RoundBlackKnob>(Vec(98, 194), module, MADDY::CHAOS_PARAM));
+        
         addOutput(createOutputCentered<PJ301MPort>(Vec(98, 234), module, MADDY::CV_OUTPUT));
         addOutput(createOutputCentered<PJ301MPort>(Vec(98, 274), module, MADDY::TRIG_OUTPUT));
+        
         addChild(createLightCentered<MediumLight<RedGreenBlueLight>>(Vec(98, 308), module, MADDY::CLOCK_SOURCE_LIGHT_RED));
         addParam(createParamCentered<VCVButton>(Vec(98, 308), module, MADDY::CLOCK_SOURCE_PARAM));
         
         addOutput(createOutputCentered<PJ301MPort>(Vec(24, 343), module, MADDY::TRACK1_OUTPUT));
         addOutput(createOutputCentered<PJ301MPort>(Vec(24, 368), module, MADDY::CHAIN_12_OUTPUT));
+        
         addOutput(createOutputCentered<PJ301MPort>(Vec(64, 343), module, MADDY::TRACK2_OUTPUT));
         addOutput(createOutputCentered<PJ301MPort>(Vec(64, 368), module, MADDY::CHAIN_23_OUTPUT));
+        
         addOutput(createOutputCentered<PJ301MPort>(Vec(102, 343), module, MADDY::TRACK3_OUTPUT));
         addOutput(createOutputCentered<PJ301MPort>(Vec(102, 368), module, MADDY::CHAIN_123_OUTPUT));
         
         if (module) {
-            delete module->paramQuantities[MADDY::DENSITY_PARAM];
-            DensityParamQuantity* densityQuantity = new DensityParamQuantity;
-            densityQuantity->module = module;
-            densityQuantity->paramId = MADDY::DENSITY_PARAM;
-            densityQuantity->minValue = 0.0f;
-            densityQuantity->maxValue = 1.0f;
-            densityQuantity->defaultValue = 0.5f;
-            densityQuantity->name = "Density";
-            module->paramQuantities[MADDY::DENSITY_PARAM] = densityQuantity;
-
             delete module->paramQuantities[MADDY::MODE_PARAM];
             ModeParamQuantity* modeQuantity = new ModeParamQuantity;
             modeQuantity->module = module;
             modeQuantity->paramId = MADDY::MODE_PARAM;
             modeQuantity->minValue = 0.0f;
-            modeQuantity->maxValue = 2.0f;
-            modeQuantity->defaultValue = 1.0f;
+            modeQuantity->maxValue = 1.0f;
+            modeQuantity->defaultValue = 0.0f;
             modeQuantity->name = "Mode";
-            modeQuantity->snapEnabled = true;
             module->paramQuantities[MADDY::MODE_PARAM] = modeQuantity;
 
             delete module->paramQuantities[MADDY::CLOCK_SOURCE_PARAM];
@@ -854,10 +852,9 @@ struct MADDYWidget : ModuleWidget {
             clockSourceQuantity->module = module;
             clockSourceQuantity->paramId = MADDY::CLOCK_SOURCE_PARAM;
             clockSourceQuantity->minValue = 0.0f;
-            clockSourceQuantity->maxValue = 6.0f;
+            clockSourceQuantity->maxValue = 1.0f;
             clockSourceQuantity->defaultValue = 0.0f;
             clockSourceQuantity->name = "Clock Source";
-            clockSourceQuantity->snapEnabled = true;
             module->paramQuantities[MADDY::CLOCK_SOURCE_PARAM] = clockSourceQuantity;
         }
     }
@@ -866,62 +863,6 @@ struct MADDYWidget : ModuleWidget {
         MADDY* module = getModule<MADDY>();
         if (!module) return;
 
-        menu->addChild(new MenuSeparator);
-        menu->addChild(createMenuLabel("Attack Time"));
-    
-        float currentAttackTime = module->tracks[0].attackTime;
-        std::string currentLabel = string::f("Current: %.3fms", currentAttackTime * 1000.0f);
-        menu->addChild(createMenuLabel(currentLabel));
-
-        struct AttackTimeChoice {
-            std::string name;
-            float value;
-        };
-
-        std::vector<AttackTimeChoice> choices = {
-            {"0.5ms", 0.0005f},
-            {"1ms", 0.001f},
-            {"2ms", 0.002f},
-            {"3ms", 0.003f},
-            {"4ms", 0.004f},
-            {"5ms", 0.005f},
-            {"6ms (Default)", 0.006f},
-            {"8ms", 0.008f},
-            {"10ms", 0.010f},
-            {"15ms", 0.015f},
-            {"20ms", 0.020f}
-        };
-
-        for (const auto& choice : choices) {
-            menu->addChild(createMenuItem(choice.name, "",
-                [=]() { 
-                    for (int i = 0; i < 3; ++i) {
-                        module->tracks[i].attackTime = choice.value;
-                    }
-                }
-            ));
-        }
-
-        menu->addChild(new MenuSeparator);
-        menu->addChild(createMenuLabel("Shift Settings"));
-
-        for (int trackId = 0; trackId < 3; trackId++) {
-            std::string trackLabel = string::f("Track %d Shift", trackId + 1);
-            menu->addChild(createMenuLabel(trackLabel));
-    
-            int currentShift = module->tracks[trackId].shift;
-            std::string currentLabel = string::f("Current: %d steps", currentShift);
-            menu->addChild(createMenuLabel(currentLabel));
-
-            for (int shift = 0; shift <= 15; shift++) {
-                std::string shiftLabel = string::f("%d steps", shift);
-                menu->addChild(createCheckMenuItem(shiftLabel, "",
-                    [=]() { return module->tracks[trackId].shift == shift; },
-                    [=]() { module->tracks[trackId].shift = shift; }
-                ));
-            }
-        }
-        
         menu->addChild(new MenuSeparator);
         menu->addChild(createMenuLabel("Pattern Mode"));
         
@@ -952,15 +893,88 @@ struct MADDYWidget : ModuleWidget {
         menu->addChild(new MenuSeparator);
         menu->addChild(createMenuLabel("Clock Source"));
         
-        std::vector<std::string> clockSources = {"LFO", "T1", "T2", "T3", "12", "23", "1213"};
+        std::vector<std::string> clockSourceNames = {"LFO", "T1", "T2", "T3", "12", "23", "1213"};
         
         for (int i = 0; i < 7; ++i) {
-            menu->addChild(createCheckMenuItem(clockSources[i], "",
+            menu->addChild(createCheckMenuItem(clockSourceNames[i], "",
                 [=]() { return module->clockSourceValue == i; },
                 [=]() { module->clockSourceValue = i; }
             ));
         }
+        
+        menu->addChild(new MenuSeparator);
+        menu->addChild(createMenuLabel("Attack Time"));
+        
+        std::vector<std::pair<std::string, float>> attackTimeChoices = {
+            {"0.5ms", 0.0005f},
+            {"1ms", 0.001f},
+            {"3ms", 0.003f},
+            {"6ms (Default)", 0.006f},
+            {"10ms", 0.01f},
+            {"15ms", 0.015f},
+            {"20ms", 0.02f}
+        };
+        
+        for (const auto& choice : attackTimeChoices) {
+            menu->addChild(createMenuItem(choice.first, "",
+                [=]() { 
+                    for (int i = 0; i < 3; ++i) {
+                        module->tracks[i].attackTime = choice.second;
+                    }
+                }
+            ));
+        }
+        
+        menu->addChild(new MenuSeparator);
+        menu->addChild(createMenuLabel("Shift Settings"));
+
+        for (int trackId = 0; trackId < 3; trackId++) {
+            std::string trackLabel = string::f("Track %d Shift", trackId + 1);
+            menu->addChild(createMenuLabel(trackLabel));
+            
+            struct TrackShiftMenu : MenuItem {
+                MADDY* module;
+                int trackIndex;
+                
+                TrackShiftMenu(MADDY* module, int trackIndex) : module(module), trackIndex(trackIndex) {
+                    text = string::f("Track %d Shift", trackIndex + 1);
+                    rightText = string::f("%d step", module ? module->tracks[trackIndex].shift : 0);
+                }
+                
+                Menu* createChildMenu() override {
+                    Menu* menu = new Menu();
+                    
+                    for (int shift = 0; shift <= 4; shift++) {
+                        struct ShiftMenuItem : MenuItem {
+                            MADDY* module;
+                            int trackIndex;
+                            int shiftValue;
+                            
+                            ShiftMenuItem(MADDY* module, int trackIndex, int shiftValue) 
+                                : module(module), trackIndex(trackIndex), shiftValue(shiftValue) {
+                                text = string::f("%d step", shiftValue);
+                                if (module && module->tracks[trackIndex].shift == shiftValue) {
+                                    rightText = CHECKMARK_STRING;
+                                }
+                            }
+                            
+                            void onAction(const event::Action& e) override {
+                                if (module && trackIndex >= 0 && trackIndex < 3) {
+                                    module->tracks[trackIndex].shift = shiftValue;
+                                }
+                            }
+                        };
+                        
+                        menu->addChild(new ShiftMenuItem(module, trackIndex, shift));
+                    }
+                    
+                    return menu;
+                }
+            };
+            
+            menu->addChild(new TrackShiftMenu(module, trackId));
+        }
     }
-};
+}; 
 
 Model* modelMADDY = createModel<MADDY, MADDYWidget>("MADDY");
