@@ -1,0 +1,30 @@
+# Build directories
+VCVmodule/build/
+meta module/build/
+build/
+
+# Compiled plugin files
+plugin.dylib
+*.mmplugin
+*.vcvplugin
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
