@@ -473,6 +473,30 @@ src/TWNC.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADZINE.dir/build.make CMakeFiles/MADZINE.dir/src/TWNC.cpp.s
 .PHONY : src/TWNC.cpp.s
 
+src/TWNCLight.obj: src/TWNCLight.cpp.obj
+.PHONY : src/TWNCLight.obj
+
+# target to build an object file
+src/TWNCLight.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADZINE.dir/build.make CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj
+.PHONY : src/TWNCLight.cpp.obj
+
+src/TWNCLight.i: src/TWNCLight.cpp.i
+.PHONY : src/TWNCLight.i
+
+# target to preprocess a source file
+src/TWNCLight.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADZINE.dir/build.make CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.i
+.PHONY : src/TWNCLight.cpp.i
+
+src/TWNCLight.s: src/TWNCLight.cpp.s
+.PHONY : src/TWNCLight.s
+
+# target to generate assembly for a file
+src/TWNCLight.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/MADZINE.dir/build.make CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.s
+.PHONY : src/TWNCLight.cpp.s
+
 src/plugin.obj: src/plugin.cpp.obj
 .PHONY : src/plugin.obj
 
@@ -544,6 +568,9 @@ help:
 	@echo "... src/TWNC.obj"
 	@echo "... src/TWNC.i"
 	@echo "... src/TWNC.s"
+	@echo "... src/TWNCLight.obj"
+	@echo "... src/TWNCLight.i"
+	@echo "... src/TWNCLight.s"
 	@echo "... src/plugin.obj"
 	@echo "... src/plugin.i"
 	@echo "... src/plugin.s"

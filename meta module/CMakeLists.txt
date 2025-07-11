@@ -19,6 +19,7 @@ target_sources(MADZINE PRIVATE
     src/MADDY.cpp
     src/PPaTTTerning.cpp
     src/TWNC.cpp
+    src/TWNCLight.cpp
     src/QQ.cpp
     src/Observer.cpp
 )

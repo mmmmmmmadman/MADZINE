@@ -19,6 +19,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/MADZINE.dir/src/SwingLFO.cpp.obj.d"
   "CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj"
   "CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj.d"
+  "CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj"
+  "CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj.d"
   "CMakeFiles/MADZINE.dir/src/plugin.cpp.obj"
   "CMakeFiles/MADZINE.dir/src/plugin.cpp.obj.d"
   "libMADZINE.a"

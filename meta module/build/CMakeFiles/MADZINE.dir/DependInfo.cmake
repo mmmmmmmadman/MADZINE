@@ -18,6 +18,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/QQ.cpp" "CMakeFiles/MADZINE.dir/src/QQ.cpp.obj" "gcc" "CMakeFiles/MADZINE.dir/src/QQ.cpp.obj.d"
   "/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/SwingLFO.cpp" "CMakeFiles/MADZINE.dir/src/SwingLFO.cpp.obj" "gcc" "CMakeFiles/MADZINE.dir/src/SwingLFO.cpp.obj.d"
   "/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNC.cpp" "CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj" "gcc" "CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj.d"
+  "/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNCLight.cpp" "CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj" "gcc" "CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj.d"
   "/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/plugin.cpp" "CMakeFiles/MADZINE.dir/src/plugin.cpp.obj" "gcc" "CMakeFiles/MADZINE.dir/src/plugin.cpp.obj.d"
   )
 

@@ -184,10 +184,24 @@ CMakeFiles/MADZINE.dir/src/TWNC.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MADZINE.dir/src/TWNC.cpp.s"
 	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNC.cpp -o CMakeFiles/MADZINE.dir/src/TWNC.cpp.s
 
+CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj: CMakeFiles/MADZINE.dir/flags.make
+CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj: /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNCLight.cpp
+CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj: CMakeFiles/MADZINE.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj"
+	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj -MF CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj.d -o CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj -c /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNCLight.cpp
+
+CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.i"
+	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNCLight.cpp > CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.i
+
+CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.s"
+	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/TWNCLight.cpp -o CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.s
+
 CMakeFiles/MADZINE.dir/src/QQ.cpp.obj: CMakeFiles/MADZINE.dir/flags.make
 CMakeFiles/MADZINE.dir/src/QQ.cpp.obj: /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/QQ.cpp
 CMakeFiles/MADZINE.dir/src/QQ.cpp.obj: CMakeFiles/MADZINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/MADZINE.dir/src/QQ.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MADZINE.dir/src/QQ.cpp.obj"
 	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MADZINE.dir/src/QQ.cpp.obj -MF CMakeFiles/MADZINE.dir/src/QQ.cpp.obj.d -o CMakeFiles/MADZINE.dir/src/QQ.cpp.obj -c /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/QQ.cpp
 
 CMakeFiles/MADZINE.dir/src/QQ.cpp.i: cmake_force
@@ -201,7 +215,7 @@ CMakeFiles/MADZINE.dir/src/QQ.cpp.s: cmake_force
 CMakeFiles/MADZINE.dir/src/Observer.cpp.obj: CMakeFiles/MADZINE.dir/flags.make
 CMakeFiles/MADZINE.dir/src/Observer.cpp.obj: /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/Observer.cpp
 CMakeFiles/MADZINE.dir/src/Observer.cpp.obj: CMakeFiles/MADZINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/MADZINE.dir/src/Observer.cpp.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MADZINE.dir/src/Observer.cpp.obj"
 	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MADZINE.dir/src/Observer.cpp.obj -MF CMakeFiles/MADZINE.dir/src/Observer.cpp.obj.d -o CMakeFiles/MADZINE.dir/src/Observer.cpp.obj -c /Users/madzine/Documents/MetaModule/MADZINE-MetaModule/src/Observer.cpp
 
 CMakeFiles/MADZINE.dir/src/Observer.cpp.i: cmake_force
@@ -215,7 +229,7 @@ CMakeFiles/MADZINE.dir/src/Observer.cpp.s: cmake_force
 CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj: CMakeFiles/MADZINE.dir/flags.make
 CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj: /Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc
 CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj: CMakeFiles/MADZINE.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj"
 	/opt/arm-gnu-toolchain/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj -MF CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj.d -o CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj -c /Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc
 
 CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.i: cmake_force
@@ -236,6 +250,7 @@ MADZINE_OBJECTS = \
 "CMakeFiles/MADZINE.dir/src/MADDY.cpp.obj" \
 "CMakeFiles/MADZINE.dir/src/PPaTTTerning.cpp.obj" \
 "CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj" \
+"CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj" \
 "CMakeFiles/MADZINE.dir/src/QQ.cpp.obj" \
 "CMakeFiles/MADZINE.dir/src/Observer.cpp.obj" \
 "CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj"
@@ -251,12 +266,13 @@ libMADZINE.a: CMakeFiles/MADZINE.dir/src/Pinpple.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/src/MADDY.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/src/PPaTTTerning.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/src/TWNC.cpp.obj
+libMADZINE.a: CMakeFiles/MADZINE.dir/src/TWNCLight.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/src/QQ.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/src/Observer.cpp.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/version.cc.obj
 libMADZINE.a: CMakeFiles/MADZINE.dir/build.make
 libMADZINE.a: CMakeFiles/MADZINE.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX static library libMADZINE.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/madzine/Documents/MetaModule/MADZINE-MetaModule/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libMADZINE.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/MADZINE.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/MADZINE.dir/link.txt --verbose=$(VERBOSE)
 
