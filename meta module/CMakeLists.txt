@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-include(../metamodule-plugin-sdk/plugin.cmake)
+include(/Users/madzine/Documents/MetaModule/metamodule-plugin-sdk/plugin.cmake)
 
 project(MADZINE 
     VERSION 2.1.3 
