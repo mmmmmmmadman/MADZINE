@@ -29,3 +29,4 @@ CMakeFiles/
 cmake_install.cmake
 Makefile
 *.vcvplugin
+.DS_Store
